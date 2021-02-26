@@ -1,0 +1,90 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/vars.scss";
+
+
+// Acts as a height placeholder
+.staticWrapper {
+    // height: $height-navbar-mobile;
+    position: relative;
+}
+
+.listWrapper {
+    min-height: $height-navbar-mobile;
+    display: flex;
+    top: $height-navbar-mobile;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    left: -100vw;
+    background-color: rgba(0, 0, 0, 0.897);
+    min-height: calc(100vh - 6rem);
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: 2;
+        
+    // Mobile only
+    ul li {
+        width: 100%;
+        padding: 1.5rem;
+        list-style: none;
+        margin: 0;
+    }
+    
+    @media screen and (min-width: $bp-desktop--small) {
+        position: fixed;
+        top: unset;
+        left: unset;
+        height: unset;
+        min-height: $height-navbar-mobile;
+        justify-content: center;
+        opacity: 0.9;
+        box-shadow: $shadow-1;
+        transition: none;
+        
+        ul li {
+            width: unset;
+            padding: 0rem;
+            height: 100%;
+
+            a, span {
+                padding: 2rem;
+            }
+        }
+    }
+}
+
+.onNavbarOpen {
+    transition: left 0.5s;
+    
+    left: 0vw;
+    opacity: 1;
+}
+
+.link {
+    a, span{
+        transition: all 0.5s;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        
+        &:hover {
+            background-color: rgba(255,255,255,0.15);
+        }
+    }
+}
+
+.toggle {
+    background-color: rgba(0, 0, 0, 0.897);
+    width: 100%;
+    cursor: pointer;
+    height: $height-navbar-mobile;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    box-shadow: $shadow-1;
+    
+    @media screen and (min-width: $bp-desktop--small) {
+        display: none;
+    }
+}

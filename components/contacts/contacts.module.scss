@@ -1,0 +1,27 @@
+@import "../../styles/colors.scss";
+@import "../../styles/breakpoints.scss";
+
+.contacts {
+    background-color: $col-brown-1;
+    
+    input, textarea {
+        padding: 1rem;
+        max-height: 3rem;
+        border: 0;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 2px;
+
+        color: gray;
+
+        &::placeholder {
+            color: lightgray;
+        }
+    }
+
+    textarea {
+        height: 200px;
+        max-height: unset;
+        resize: none;
+    }
+}

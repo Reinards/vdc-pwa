@@ -1,0 +1,26 @@
+@import "./colors.scss";
+
+.button {
+    color: white;
+    border: 0;
+    padding: 0.7rem 2rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.button--brown {
+    @extend .button; 
+    background-color: $col-brown-1;
+    &:hover {
+        background-color: darken($col-brown-1, 10);
+    }
+}
+
+.button--brown-2 {
+    @extend .button; 
+    background-color: $col-brown-2;
+    &:hover {
+        background-color: darken($col-brown-2, 10);
+    }
+}

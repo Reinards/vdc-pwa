@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: Collection;
+    src:  url('../public/fonts/CollectionFree.otf') format('opentype')
+}
+
+@font-face {
+    font-family: Mr;
+    src:  url('../public/fonts/Montserrat-Regular.otf') format('opentype')
+}
+@font-face {
+    font-family: MrLight;
+    src:  url('../public/fonts/Montserrat-Light.otf') format('opentype')
+}
+@font-face {
+    font-family: MrLighter;
+    src:  url('../public/fonts/Montserrat-UltraLight.otf') format('opentype')
+}
+@font-face {
+    font-family: MrBold;
+    src:  url('../public/fonts/Montserrat-Bold.otf') format('opentype')
+}
+@font-face {
+    font-family: MrExtraaBold;
+    src:  url('../public/fonts/Montserrat-ExtraBold.otf') format('opentype')
+}
+
+.script {
+    font-family: Collection;
+}
+
+.mr {
+    font-family: Mr;
+}
+
+.mr--light {
+    font-family: MrLight;
+    font-weight: 100;
+}
+
+.mr--lighter {
+    font-family: MrLighter;
+    font-weight: 200;
+}
+
+.mr--bold {
+    font-family: MrBold;
+}
+
+.mr--heavy {
+    font-family: MrExtraBold;
+}
+
+.fw1 {
+    font-weight: 100;
+}
+
+.f0 {
+    font-size: 6rem;
+}
+.f0--smaller {
+    font-size: 5rem;
+}
+
+.lh05 {
+    line-height: 0.5;
+}
