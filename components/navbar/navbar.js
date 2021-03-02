@@ -31,11 +31,9 @@ class Navbar extends Component {
                 
                 <div className={this.state.navbarOpen==true ? Styles.listWrapper+" "+Styles.onNavbarOpen : Styles.listWrapper}>
                     <ul className="flex justify-center flex-wrap pa0 ma0">
-                        {/* <li className={Styles.link+" hover"}>
-                            <Link href="/"><a>
-                            <Image src="/logo.png" alt="VDC Logo" width="73" height="96" />
-                            </a></Link>
-                        </li> */}
+                        <li className={Styles.link+" hover"}>
+                            <Link href="/"><a>Sākums</a></Link>
+                        </li>
                         <li className={Styles.link+" hover"}>
                             <Link href="/kas-ir-vegetativa-distonija"><a>Kas ir veģetatīvā distonija</a></Link>
                         </li>
