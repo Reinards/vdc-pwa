@@ -1,8 +1,17 @@
 @import "../../styles/colors.scss";
 @import "../../styles/breakpoints.scss";
 
+.leaves {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 30%;
+}
+
 .review-form {
     background-color: $col-brown-1;
+    position: relative;
     
     input, textarea {
         padding: 1rem;

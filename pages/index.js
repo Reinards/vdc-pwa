@@ -97,7 +97,7 @@ export default function Home() {
         <h2 className="pv5 mr--lighter white f2 uppercase">Ko tu iegūsi</h2>
         
         <div className="flex flex-wrap">
-          <div class="w-third">
+          <div className="w-third">
             <Benefit
               imgUrl="/illustration1.png"
               alt="Iekšējs miers"
@@ -107,7 +107,7 @@ export default function Home() {
             </Benefit>
           </div>
           
-          <div class="w-third">
+          <div className="w-third">
             <Benefit
               imgUrl="/illustration2.png"
               alt="Emocionāla stabilitāte"
@@ -117,7 +117,7 @@ export default function Home() {
             </Benefit>
           </div>
           
-          <div class="w-third">
+          <div className="w-third">
             <Benefit
               imgUrl="/illustration3.png"
               alt="Enerģija"
@@ -131,7 +131,7 @@ export default function Home() {
       
       {/* BIO */}
       <div className="flex">
-        <div class="w-70 flex flex-column justify-center items-center pv6 ph6">
+        <div className="w-70 flex flex-column justify-center items-center pv6 ph6">
           <h1 className="script brown-1 f0--smaller fw1 mb0">Ivars Tilgalis</h1>
           <p className="ph7 tj">
             Esmu "Veģetatīvās Distonijas Centrs" dibinātājs un vadītājs Ivars Tilgalis. Kā to parāda mana prakse, strādājot ar cilvēkiem, varu teikt, ka lielākajā vairumā slimības fiziskās izpausmes ir tikai gala projekcija procesiem, kuru sākumu varam meklēt daudz smalkākā sfērā - cilvēka enerģētikā un tajā notiekošajos energoinformatīvajos procesos...
@@ -139,7 +139,7 @@ export default function Home() {
           <button className="button--brown mt3">Lasīt vairāk</button>
         </div>
         
-        <div class="w-30">
+        <div className="w-30">
           <Image 
             src="/img2.jpg"
             alt="Ivars Tilgalis"

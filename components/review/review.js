@@ -1,9 +1,16 @@
 import css from "./review.module.scss"
+import Image from "next/image"
 
 export default function Review() {
     return (
         <div className={css['review-form']+" pa5 pv6"}>
             <h2 className="white uppercase mr--lighter f2 tc mb6 mt0">Būsim pateicīgi, ja atstāsi arī savu atsauksmi</h2>
+{/* 
+                <Image src="/koks.png"
+                width="1000"
+                height="1000"
+                alt="Lapas"
+                className={css.leaves}/> */}
 
             <div className="flex flex-column ph7 mh5">
                 <div className="input-group flex flex-wrap">

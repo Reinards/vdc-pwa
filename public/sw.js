@@ -1,1 +1,177 @@
-if(!self.define){const e=e=>{"require"!==e&&(e+=".js");let a=Promise.resolve();return s[e]||(a=new Promise(async a=>{if("document"in self){const s=document.createElement("script");s.src=e,document.head.appendChild(s),s.onload=a}else importScripts(e),a()})),a.then(()=>{if(!s[e])throw new Error(`Module ${e} didn’t register its module`);return s[e]})},a=(a,s)=>{Promise.all(a.map(e)).then(e=>s(1===e.length?e[0]:e))},s={require:Promise.resolve(a)};self.define=(a,c,i)=>{s[a]||(s[a]=Promise.resolve().then(()=>{let s={};const n={uri:location.origin+a.slice(1)};return Promise.all(c.map(a=>{switch(a){case"exports":return s;case"module":return n;default:return e(a)}})).then(e=>{const a=i(...e);return s.default||(s.default=a),s})}))}}define("./sw.js",["./workbox-c2b5e142"],(function(e){"use strict";importScripts(),e.skipWaiting(),e.clientsClaim(),e.precacheAndRoute([{url:"/_next/static/chunks/05d954cf.998326058b8e4c32ca3e.js",revision:"ee57a06e8695eb7a077c6d9dea6d5ee3"},{url:"/_next/static/chunks/0e903fcbb4822c36c95bcf5ba9980e265ef606bd.34f1c7416292b573d705.js",revision:"0a1b3e935c313edd60c4676eb6e165f7"},{url:"/_next/static/chunks/commons.44588376bcd747536b55.js",revision:"6e84127b78d82059777ebc2987e34092"},{url:"/_next/static/chunks/framework.64c08973ae123710aa81.js",revision:"fb76d4087ef42bcf95cff74ef4548c6b"},{url:"/_next/static/chunks/main-5b1f39874c91c53a8774.js",revision:"c2ec4225e7d24817dc52964ea7d2efbd"},{url:"/_next/static/chunks/pages/_app-90aa25326ec864fe2d6d.js",revision:"e107023558d0e82bc04e45ccc0e31e0b"},{url:"/_next/static/chunks/pages/_error-299146eaff3f7481a6d1.js",revision:"7c1c1f78908001d9a2aa65e6b2baaf7d"},{url:"/_next/static/chunks/pages/atsauksmes-9617f14d9fb9960c6ac2.js",revision:"ec4c725a7d203d84c403a34a0a3dd820"},{url:"/_next/static/chunks/pages/atveselosanas-8348a9148c6a300235cd.js",revision:"3e7fed15e3cef32d4df059e998c2e853"},{url:"/_next/static/chunks/pages/buj-432c5ddc90e5581bdb9c.js",revision:"64e3b3286bfd24a220f0b7d6b06d91c6"},{url:"/_next/static/chunks/pages/energoterapeits-4d77ddbcd56919453c9c.js",revision:"9e46efb14e7654f552cd83d81dea7221"},{url:"/_next/static/chunks/pages/index-03abf430bc9e31ecd004.js",revision:"844b3754a509f2771a1076defbb5d408"},{url:"/_next/static/chunks/pages/kas-ir-vegetativa-distonija-1eb19dfc1ef7afcc9d32.js",revision:"9b14247f0d8327cca814d24c2452feb2"},{url:"/_next/static/chunks/polyfills-4f4acd756cef4fe6da1b.js",revision:"4501917d66e780442a43929757a12491"},{url:"/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js",revision:"8c19f623e8389f11131a054a7e17ff95"},{url:"/_next/static/css/1a050603ecb07c31ed85.css",revision:"36f797e3159a6c466e6f286957ddfba9"},{url:"/_next/static/css/816d27a1c3f4fa746773.css",revision:"bab3bce52365f66e44efaed5d9d9f466"},{url:"/_next/static/css/9f4e833d53fb36bb3513.css",revision:"c40d911e50203990f0694a8fabf6557a"},{url:"/_next/static/css/fb24d42923ceacd11b72.css",revision:"6f0100779f55f623ad994a6c30fa8283"},{url:"/_next/static/css/fddfc5ee73dbd90b90f2.css",revision:"e0e6fe8de7bf6f7fce4e4a8f491784a9"},{url:"/_next/static/gIxoj7PBt8iePTujnT-Ai/_buildManifest.js",revision:"499621cc6aea23d24a8431730391d284"},{url:"/_next/static/gIxoj7PBt8iePTujnT-Ai/_ssgManifest.js",revision:"abee47769bf307639ace4945f9cfd4ff"},{url:"/_next/static/media/CollectionFree.fc56f0141bbb1abc2883efc41b36fadb.otf",revision:"1b403452718c9888821b505a15e09ba1"},{url:"/_next/static/media/Montserrat-Bold.165ff0f48797c2bfa717704be314aab7.otf",revision:"5a6aef823dd8d1b22aacd78aebb653d6"},{url:"/_next/static/media/Montserrat-ExtraBold.da4ee56d14829092d23de5285bef6d9c.otf",revision:"2bd71f20a86651553aae5d1e7d3383eb"},{url:"/_next/static/media/Montserrat-Light.d48e0efcfd560dd026295cc2b2f0d00e.otf",revision:"f5e955efb2bef154ac6dd150903f2d45"},{url:"/_next/static/media/Montserrat-Regular.d7faa247e52835ac2b4aa0b4a62dfc1a.otf",revision:"27e50ffd6a14cbc8221c9dbd3b5208dc"},{url:"/_next/static/media/Montserrat-UltraLight.e39ef243a7dacfa600c866953d3da255.otf",revision:"816e4ead403eeba090d9a7c77c4ba9c2"},{url:"/arrow.png",revision:"94bca709cfc4cde98b75d5158a24eda9"},{url:"/favicon.ico",revision:"4ff59fef4ad8bd2547e3db47bac48f20"},{url:"/fb.svg",revision:"cc34e2464ff947001a3cceff2de2afe3"},{url:"/fonts/CollectionFree.otf",revision:"1b403452718c9888821b505a15e09ba1"},{url:"/fonts/Montserrat-Black.otf",revision:"f86a4fdb233e1ca195b64712ac9c7cbe"},{url:"/fonts/Montserrat-Bold.otf",revision:"5a6aef823dd8d1b22aacd78aebb653d6"},{url:"/fonts/Montserrat-ExtraBold.otf",revision:"2bd71f20a86651553aae5d1e7d3383eb"},{url:"/fonts/Montserrat-Hairline.otf",revision:"af3ac151d996baa94cb52c8a3fe01218"},{url:"/fonts/Montserrat-Light.otf",revision:"f5e955efb2bef154ac6dd150903f2d45"},{url:"/fonts/Montserrat-Regular.otf",revision:"27e50ffd6a14cbc8221c9dbd3b5208dc"},{url:"/fonts/Montserrat-SemiBold.otf",revision:"cbdf3ab950d15019fff93460614948b7"},{url:"/fonts/Montserrat-Thin.ttf",revision:"9d9f03c034671acb26355acf621a46a8"},{url:"/fonts/Montserrat-UltraLight.otf",revision:"816e4ead403eeba090d9a7c77c4ba9c2"},{url:"/icons/icon-128x128.png",revision:"d626cfe7c65e6e5403bcbb9d13aa5053"},{url:"/icons/icon-144x144.png",revision:"e53a506b62999dc7a4f8b7222f8c5add"},{url:"/icons/icon-152x152.png",revision:"18b3958440703a9ecd3c246a0f3f7c72"},{url:"/icons/icon-16x16.png",revision:"83703514f19796ee15151e450984416d"},{url:"/icons/icon-192x192.png",revision:"27dc12f66697a47b6a8b3ee25ba96257"},{url:"/icons/icon-32x32.png",revision:"25e2c6ee34840568012b32e4314278df"},{url:"/icons/icon-384x384.png",revision:"a40324a3fde2b0b26eeffd4f08bf8be8"},{url:"/icons/icon-512x512.png",revision:"93d6e8e15cfa78dfee55446f607d9a28"},{url:"/icons/icon-72x72.png",revision:"f2ffc41b3482888f3ae614e0dd2f6980"},{url:"/icons/icon-96x96.png",revision:"fba02a40f7ba6fc65be8a2f245480f6d"},{url:"/ig.svg",revision:"02e0d4ed15279fe8ac57ea3be9274957"},{url:"/illustration1.png",revision:"da19845253b495ab9b600ef7ada05b10"},{url:"/illustration2.png",revision:"215ed8841923ae2cf8f630e7d496265c"},{url:"/illustration3.png",revision:"7f8e92cf692fd663d43d8babedd6c00c"},{url:"/img1.jpg",revision:"b733750ced11cd56342e1bca0cd24213"},{url:"/img2.jpg",revision:"61eec6728dd7891223a4d78016a1c0c4"},{url:"/img3.jpg",revision:"8e09ce590b611486c27e6545f05d0bce"},{url:"/img4.jpg",revision:"307e1dc4ba8d775e841a59c81dda444d"},{url:"/img5 - Copy.jpg",revision:"d24edb59bd6473080da56e23544a9f96"},{url:"/img5.jpg",revision:"dc5560d45828e983abc0b70ba23eea45"},{url:"/logo.png",revision:"96d018a151aea97b05e2b8576b669582"},{url:"/manifest.json",revision:"88196ecdffa9865255fee203ae9d27c0"},{url:"/tris.png",revision:"56e72e290b3fe143828243e164495c68"},{url:"/vercel.svg",revision:"4b4f1876502eb6721764637fe5c41702"}],{ignoreURLParametersMatching:[]}),e.cleanupOutdatedCaches(),e.registerRoute("/",new e.NetworkFirst({cacheName:"start-url",plugins:[new e.ExpirationPlugin({maxEntries:1,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/^https:\/\/fonts\.(?:googleapis|gstatic)\.com\/.*/i,new e.CacheFirst({cacheName:"google-fonts",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:31536e3,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:eot|otf|ttc|ttf|woff|woff2|font.css)$/i,new e.StaleWhileRevalidate({cacheName:"static-font-assets",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:604800,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:jpg|jpeg|gif|png|svg|ico|webp)$/i,new e.StaleWhileRevalidate({cacheName:"static-image-assets",plugins:[new e.ExpirationPlugin({maxEntries:64,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:js)$/i,new e.StaleWhileRevalidate({cacheName:"static-js-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:css|less)$/i,new e.StaleWhileRevalidate({cacheName:"static-style-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:json|xml|csv)$/i,new e.NetworkFirst({cacheName:"static-data-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\/api\/.*$/i,new e.NetworkFirst({cacheName:"apis",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:16,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/.*/i,new e.NetworkFirst({cacheName:"others",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET")}));
+/**
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// If the loader is already loaded, just stop.
+if (!self.define) {
+  const singleRequire = name => {
+    if (name !== 'require') {
+      name = name + '.js';
+    }
+    let promise = Promise.resolve();
+    if (!registry[name]) {
+      
+        promise = new Promise(async resolve => {
+          if ("document" in self) {
+            const script = document.createElement("script");
+            script.src = name;
+            document.head.appendChild(script);
+            script.onload = resolve;
+          } else {
+            importScripts(name);
+            resolve();
+          }
+        });
+      
+    }
+    return promise.then(() => {
+      if (!registry[name]) {
+        throw new Error(`Module ${name} didn’t register its module`);
+      }
+      return registry[name];
+    });
+  };
+
+  const require = (names, resolve) => {
+    Promise.all(names.map(singleRequire))
+      .then(modules => resolve(modules.length === 1 ? modules[0] : modules));
+  };
+  
+  const registry = {
+    require: Promise.resolve(require)
+  };
+
+  self.define = (moduleName, depsNames, factory) => {
+    if (registry[moduleName]) {
+      // Module is already loading or loaded.
+      return;
+    }
+    registry[moduleName] = Promise.resolve().then(() => {
+      let exports = {};
+      const module = {
+        uri: location.origin + moduleName.slice(1)
+      };
+      return Promise.all(
+        depsNames.map(depName => {
+          switch(depName) {
+            case "exports":
+              return exports;
+            case "module":
+              return module;
+            default:
+              return singleRequire(depName);
+          }
+        })
+      ).then(deps => {
+        const facValue = factory(...deps);
+        if(!exports.default) {
+          exports.default = facValue;
+        }
+        return exports;
+      });
+    });
+  };
+}
+define("./sw.js",['./workbox-17357acd'], function (workbox) { 'use strict';
+
+  /**
+  * Welcome to your Workbox-powered service worker!
+  *
+  * You'll need to register this file in your web app.
+  * See https://goo.gl/nhQhGp
+  *
+  * The rest of the code is auto-generated. Please don't update this file
+  * directly; instead, make changes to your Workbox build configuration
+  * and re-run your build process.
+  * See https://goo.gl/2aRDsh
+  */
+
+  importScripts();
+  workbox.skipWaiting();
+  workbox.clientsClaim();
+  workbox.registerRoute("/", new workbox.NetworkFirst({
+    "cacheName": "start-url",
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 1,
+      maxAgeSeconds: 86400,
+      purgeOnQuotaError: true
+    })]
+  }), 'GET');
+  workbox.registerRoute(/^https:\/\/fonts\.(?:googleapis|gstatic)\.com\/.*/i, new workbox.CacheFirst({
+    "cacheName": "google-fonts",
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 4,
+      maxAgeSeconds: 31536000,
+      purgeOnQuotaError: true
+    })]
+  }), 'GET');
+  workbox.registerRoute(/\.(?:eot|otf|ttc|ttf|woff|woff2|font.css)$/i, new workbox.StaleWhileRevalidate({
+    "cacheName": "static-font-assets",
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 4,
+      maxAgeSeconds: 604800,
+      purgeOnQuotaError: true
+    })]
+  }), 'GET');
+  workbox.registerRoute(/\.(?:jpg|jpeg|gif|png|svg|ico|webp)$/i, new workbox.StaleWhileRevalidate({
+    "cacheName": "static-image-assets",
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 64,
+      maxAgeSeconds: 86400,
+      purgeOnQuotaError: true
+    })]
+  }), 'GET');
+  workbox.registerRoute(/\.(?:js)$/i, new workbox.StaleWhileRevalidate({
+    "cacheName": "static-js-assets",
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 32,
+      maxAgeSeconds: 86400,
+      purgeOnQuotaError: true
+    })]
+  }), 'GET');
+  workbox.registerRoute(/\.(?:css|less)$/i, new workbox.StaleWhileRevalidate({
+    "cacheName": "static-style-assets",
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 32,
+      maxAgeSeconds: 86400,
+      purgeOnQuotaError: true
+    })]
+  }), 'GET');
+  workbox.registerRoute(/\.(?:json|xml|csv)$/i, new workbox.NetworkFirst({
+    "cacheName": "static-data-assets",
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 32,
+      maxAgeSeconds: 86400,
+      purgeOnQuotaError: true
+    })]
+  }), 'GET');
+  workbox.registerRoute(/\/api\/.*$/i, new workbox.NetworkFirst({
+    "cacheName": "apis",
+    "networkTimeoutSeconds": 10,
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 16,
+      maxAgeSeconds: 86400,
+      purgeOnQuotaError: true
+    })]
+  }), 'GET');
+  workbox.registerRoute(/.*/i, new workbox.NetworkFirst({
+    "cacheName": "others",
+    "networkTimeoutSeconds": 10,
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 32,
+      maxAgeSeconds: 86400,
+      purgeOnQuotaError: true
+    })]
+  }), 'GET');
+
+});
+//# sourceMappingURL=sw.js.map
