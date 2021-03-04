@@ -14,7 +14,6 @@ class Navbar extends Component {
     }
     
     toggleState = () => {
-        console.log(this.state.navbarOpen);
         this.setState({navbarOpen: !this.state.navbarOpen});
     }
 
@@ -26,7 +25,8 @@ class Navbar extends Component {
         return (
             <div className={Styles.staticWrapper}>
                 <div className={Styles.toggle+" flex justify-end pa4"}>
-                    <p className="white pa0 ma0" onClick={this.toggleState}>===</p>
+                    <img className={this.state.navbarOpen ? "dn": ""} src="/hamburger.svg" alt="Izvēlne" onClick={this.toggleState}/>
+                    <img className={!this.state.navbarOpen ? "dn": ""} src="/hamburger-close.svg" alt="Izvēlne" onClick={this.toggleState}/>
                 </div>
                 
                 <div className={this.state.navbarOpen==true ? Styles.listWrapper+" "+Styles.onNavbarOpen : Styles.listWrapper}>
@@ -50,7 +50,7 @@ class Navbar extends Component {
                             <Link href="/atsauksmes"><a>Atsauksmes</a></Link>
                         </li>
                         <li className={Styles.link}>
-                            <ScrollLink to='footer' smooth={true}>
+                            <ScrollLink onClick={this.toggleState} to='footer' smooth={true}>
                                 Kontakti
                             </ScrollLink> 
                         </li>

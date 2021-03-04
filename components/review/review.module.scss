@@ -3,10 +3,14 @@
 
 .leaves {
     position: absolute;
-    top: 0;
+    top: 100px;
     right: 0;
     width: 25%;
     height: 25%;
+
+    @include bp-min($bp-desktop--small) {
+        top: 0;
+    }
 }
 
 .review-form {

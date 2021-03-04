@@ -2,10 +2,13 @@
 @import "../../styles/vars.scss";
 
 
+$navbar-opacity: 0.95;
+
 // Acts as a height placeholder
 .staticWrapper {
     // height: $height-navbar-mobile;
     position: relative;
+    outline: 0;
 }
 
 .listWrapper {
@@ -21,6 +24,7 @@
     transition: all 0.5s;
     opacity: 0;
     z-index: 2;
+    outline: 0;
         
     // Mobile only
     ul li {
@@ -28,6 +32,7 @@
         padding: 1.5rem;
         list-style: none;
         margin: 0;
+        outline: 0;
     }
     
     @media screen and (min-width: $bp-desktop--small) {
@@ -37,7 +42,7 @@
         height: unset;
         min-height: $height-navbar-mobile;
         justify-content: center;
-        opacity: 0.9;
+        opacity: $navbar-opacity;
         box-shadow: $shadow-1;
         transition: none;
         
@@ -89,7 +94,14 @@
     position: fixed;
     z-index: 5;
     box-shadow: $shadow-1;
+    outline: 0;
+    opacity: $navbar-opacity;
     
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+
     @media screen and (min-width: $bp-desktop--small) {
         display: none;
     }

@@ -13,7 +13,7 @@ export default function Atveselosanas() {
         <title>TODO - VDC</title>
       </Head>
       
-        <div className="pa5 ph7 mh7">
+        <div className="pa4 pa5-l ph7-l mh7-l">
             <h1 className="tc pb4 f2">Atveseļošanās</h1>
            
             <div className="flex items-center f3">

@@ -1,3 +1,4 @@
+@import "../styles/breakpoints.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @font-face {
@@ -56,13 +57,18 @@
     font-weight: 100;
 }
 
+.lh05 {
+    line-height: 0.5;
+}
+
 .f0 {
     font-size: 6rem;
+    @include bp-max($bp-desktop--small) {
+        font-size: 3rem;
+        line-height: 0.35;
+    }
 }
 .f0--smaller {
     font-size: 5rem;
 }
 
-.lh05 {
-    line-height: 0.5;
-}

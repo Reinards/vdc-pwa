@@ -1,6 +1,7 @@
 @import "./helper.scss";
 @import "./fonts.scss";
 @import "./buttons.scss";
+@import "./breakpoints.scss";
 
 *, html, body {
     font-family: MrLighter, Arial, Helvetica, sans-serif;
@@ -23,7 +24,10 @@ p {
 }
 
 .w-15 {
-    width: 15%;
+
+    @include bp-min ($bp-desktop--small) {
+        width: 15%;
+    }
 }
 .w-25 {
     width: 25%;

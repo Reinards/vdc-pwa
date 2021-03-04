@@ -1,7 +1,9 @@
-- Kontakti button scroll beh.
-- review form missing flower
-- which picture goes where
-- Make text sizes consistent
-- Mobile responsiveness
-
-(optional) 3. Add page transitions
+- Make footer not so tall
+- Contacts button goes to the fotter where there is contacts form
+- Make padding more responsive
+- Kas ir "ve. d." make it bold
+- About Ivars photo put in the corner on desktop
+- Reduce header vertical padding
+- Make q&a like accordion
+- On mobile move footer to the bottom   
+- Make contacts form smaller

@@ -1,1 +1,19 @@
 $bp-desktop--small: 1024px;
+
+@mixin bp-min($bp) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}
+
+@mixin bp-max($bp) {
+    @media (max-width: $bp) {
+        @content;
+    }
+}
+
+@mixin bp-min-max($bp1, $bp2) {
+    @media (min-width: $bp1) and (max-width: $bp2) {
+        @content;
+    }
+}

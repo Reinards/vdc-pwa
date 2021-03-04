@@ -7,8 +7,8 @@ import WebsiteData from '../../data/website.config.json'
 
 function Footer() {
     return (
-        <footer id="footer" className={css["footer"]+" pv5 ph6 flex white"}>
-            <div className="w-70">
+        <footer id="footer" className={css["footer"]+" pv4 pv5-l ph4 ph6-l flex flex-wrap white"}>
+            <div className="w-70-l">
                 <h2 className="f2 mr--lighter mt0">Kontakti</h2>
                 
                 <div className="flex">
@@ -24,9 +24,9 @@ function Footer() {
                     <div className="w-80 f4 mt2">{WebsiteData.email}</div>
                 </div>
             </div>
-            <div className="w-30 flex justify-end">
-                <div className="flex items-center w-50 flex-column">
-                    <h2 className="f2 mr--lighter mt0">Seko mums</h2>
+            <div className="w-30-l flex justify-end">
+                <div className="flex items-center-l w-50-l flex-column">
+                    <h2 className="f2 mr--lighter mt0-l">Seko mums</h2>
                     <div className="flex">
                         <div className="mr3">
                             <Link href={WebsiteData.facebook}>
