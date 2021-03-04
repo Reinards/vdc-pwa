@@ -1,9 +1,13 @@
-- Make footer not so tall
+Question this
 - Contacts button goes to the fotter where there is contacts form
+
 - Make padding more responsive
-- Kas ir "ve. d." make it bold
 - About Ivars photo put in the corner on desktop
 - Reduce header vertical padding
 - Make q&a like accordion
-- On mobile move footer to the bottom   
-- Make contacts form smaller
+
+- show active nav section
+- Optimize other jpg and png
+- Manifest and page titles need to be added
+- FavIcon and pwa icons
+- Develop email api

@@ -22,7 +22,7 @@ export default function Atsauksmes() {
 
             <section className="mt5">
                 <p className="f4">
-                    Apmeklēju seansus pie I. Tilgaļa, lai cīnītos ar veģetatīvo distoniju, kas mani mocīja jau kādu laiku un neticēju, ka no šīs nelaimes var tikt vaļā. Pirmais seanss mani pārsteidz ar miera trieciendevu, kas tajā laikā bija tieši vajadzīgais. Un nākamajā reizē jau sākās nopietns darbs, kas soli pa solītim attālināja mani no visām mokošajām trīcēm, panikām utt. Esmu ļoti apmierināta ar rezultātu.
+                    Apmeklēju seansus pie I. Tilgaļa, lai cīnītos ar veģetatīvo distoniju, kas mani mocīja jau kādu laiku un neticēju, ka no šīs nelaimes var tikt vaļā. Pirmais seanss mani pārsteidza ar miera trieciendevu, kas tajā laikā bija tieši vajadzīgais. Un nākamajā reizē jau sākās nopietns darbs, kas soli pa solītim attālināja mani no visām mokošajām trīcēm, panikām utt. Esmu ļoti apmierināta ar rezultātu.
                 </p>
                 <p className="f4 m2">/Anete/</p>
             </section>

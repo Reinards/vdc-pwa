@@ -71,7 +71,7 @@ export default function Home() {
       
       {/* Causes */}
       <div className="ph3 ph7-l pb5 pt0 tc flex flex-column items-center">
-        <h2 className="pv5 mr--light f4 f2-l w-80 w-50-l">Vai tevi kaut reizi, vai vairākkārt, bez pamatota iemesla ir traucējuši šie simptomi?</h2>
+        <h2 className="pv5 mr--light f4 f2-l w-80 w-50-l">Vai tev kaut reizi bez acīmredzama iemesla ir traucējuši šie simptomi?</h2>
 
         <div>
           <div className="flex flex-wrap justify-between">
@@ -100,7 +100,7 @@ export default function Home() {
               alt="Iekšējs miers"
               title="Iekšējs miers"
             >
-              Līdz ar cilvēka iekšējo energo struktūras atjaunošanu tiek novērsta trauksmes sajūta, panika, nemiers, tiek atgūts dzīves prieks.
+              Līdz ar cilvēka energo struktūras atjaunošanu tiek novērsta trauksmes sajūta, panika, nemiers, tiek atgūts dzīves prieks.
             </Benefit>
           </div>
           
@@ -120,7 +120,7 @@ export default function Home() {
               alt="Enerģija"
               title="Enerģija"
             >
-              Tiek atjaunots enerģijas pieplūdums, atgūts spēks pilnvērtīgai dzīvei un novērsts izdegšanas sindroms.
+              Tiek atjaunots enerģijas pieplūdums, atgūts spēks pilnvērtīgai dzīvei un novērsts izdegšanas sindroms, uzlabojas fiziskā veselība, izzūd nepatīkamie simptomi.
             </Benefit>
           </div>
         </div>

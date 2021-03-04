@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Component } from "react"
 import Styles from "./navbar.module.scss"
 import { Link as ScrollLink } from "react-scroll"
+import WebsiteData from '../../data/website.config.json'
 
 class Navbar extends Component {
     
@@ -24,7 +25,8 @@ class Navbar extends Component {
     render() {
         return (
             <div className={Styles.staticWrapper}>
-                <div className={Styles.toggle+" flex justify-end pa4"}>
+                <div className={Styles.toggle+" flex justify-around pa4"}>
+                    <a href={`tel:${WebsiteData.phone}`}><img className="animate-shake" src="/phone.svg" alt="Zvanīt"/></a>
                     <img className={this.state.navbarOpen ? "dn": ""} src="/hamburger.svg" alt="Izvēlne" onClick={this.toggleState}/>
                     <img className={!this.state.navbarOpen ? "dn": ""} src="/hamburger-close.svg" alt="Izvēlne" onClick={this.toggleState}/>
                 </div>
@@ -50,7 +52,7 @@ class Navbar extends Component {
                             <Link href="/atsauksmes"><a>Atsauksmes</a></Link>
                         </li>
                         <li className={Styles.link}>
-                            <ScrollLink onClick={this.toggleState} to='footer' smooth={true}>
+                            <ScrollLink offset={-50} onClick={this.toggleState} to='contacts' smooth={true}>
                                 Kontakti
                             </ScrollLink> 
                         </li>

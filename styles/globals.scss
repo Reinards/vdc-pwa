@@ -32,3 +32,26 @@ p {
 .w-25 {
     width: 25%;
 }
+
+.animate-shake {
+    transform-origin: center;
+    animation: shake 5s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    40% {
+        transform: rotateZ(0deg);
+    }
+    60% {
+        transform: rotateZ(10deg);
+    }
+    80% {
+        transform: rotateZ(0deg);
+    }
+}

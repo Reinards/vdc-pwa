@@ -14,7 +14,7 @@ export default function Atveselosanas() {
       </Head>
       
         <div className="pa4 pa5-l ph7-l mh7-l">
-            <h1 className="tc pb4 f2">Atveseļošanās</h1>
+            <h1 className="tc pb4 f2 mt0 mb0">Atveseļošanās</h1>
            
             <div className="flex items-center f3">
                 <div className="w-50">
@@ -25,7 +25,7 @@ export default function Atveselosanas() {
                 </div>
             </div>
 
-            <p className="f3 mt5">
+            <p className="f3 mt5 pb0 mb0">
                 Tad, kad visas trīs daļas darbojas saskaņoti, sev pieļaujamo normu robežās, - šādu sistēmu sauc par veselu, mūsu gadījumā - veselu cilvēku.
                 <br/><br/>
                 Tikko kādā no sistēmas veidojošajām daļām parādās darbības traucējumi, - šādu sistēmu jeb cilvēku mēs apzīmējam ar vārdu slims. Atkarībā no tā, kurā daļā radusies problēma:

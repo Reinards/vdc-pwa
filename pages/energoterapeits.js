@@ -10,8 +10,8 @@ export default function Ivars() {
         <title>TODO - VDC</title>
       </Head>
       
-        <div className="pa4 pa5-l ph7-l mh7-l">
-            <h1 className="tc pb4 f2">Ivars Tilgalis - Energoterapeits</h1>
+        <div className="pa4 pa4-l ph7-l mh7-l">
+            <h1 className="tc pb0 f2 mt0 mb0">Ivars Tilgalis - Energoterapeits</h1>
 
             <p className="f4">
                 Kopš sevi atceros, man ir bijusi interese par alternatīvām, netradicionālām atveseļošanas metodēm. Šīs intereses vadīts, devos uz Krieviju, kur vairāk nekā astoņus gadus apguvu zināšanas par cilvēka enerģētisko uzbūvi, par tās ietekmi uz cilvēka veselību un dzīvi kopumā. Praktiski visu brīvo laiku veltīju praktizēšanai, un ieguldītais laiks atmaksājās.
@@ -41,7 +41,7 @@ export default function Ivars() {
                 Vidē, kuru klāj sniegs un ledus, plaušās nokļūst tikai retināts gaiss, kur nav izdīdzis ne mazākais zāles asns gadsimtiem ilgi, pārņem bezgalības sajūta. Viss ir tik tīrs un neskarts, tik tālu no ierastās ikdienas.
             </p>
 
-            <p className="f4">
+            <p className="f4 pb0 mb0">
             Tā ir vide, kur attīros, kur pārdzimstu, lai atgrieztos un turpinātu sevi jau ar lielāku jaudu un skaidrāku prātu.
             </p>
         </div>

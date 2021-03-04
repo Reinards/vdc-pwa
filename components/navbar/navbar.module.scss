@@ -14,13 +14,13 @@ $navbar-opacity: 0.95;
 .listWrapper {
     min-height: $height-navbar-mobile;
     display: flex;
-    top: $height-navbar-mobile;
+    bottom: $height-navbar-mobile;
     align-items: center;
     width: 100%;
     position: fixed;
     left: -100vw;
     background-color: rgba(0, 0, 0, 0.897);
-    min-height: calc(100vh - 6rem);
+    min-height: calc(100vh - 4.5rem);
     transition: all 0.5s;
     opacity: 0;
     z-index: 2;
@@ -29,7 +29,7 @@ $navbar-opacity: 0.95;
     // Mobile only
     ul li {
         width: 100%;
-        padding: 1.5rem;
+        padding: 1.25rem 1.5rem;
         list-style: none;
         margin: 0;
         outline: 0;
@@ -38,6 +38,7 @@ $navbar-opacity: 0.95;
     @media screen and (min-width: $bp-desktop--small) {
         position: fixed;
         top: unset;
+        bottom: unset;
         left: unset;
         height: unset;
         min-height: $height-navbar-mobile;
@@ -52,7 +53,7 @@ $navbar-opacity: 0.95;
             height: 100%;
 
             a, span {
-                padding: 2rem;
+                padding: 1.5rem 2rem;
             }
         }
     }
@@ -104,5 +105,10 @@ $navbar-opacity: 0.95;
 
     @media screen and (min-width: $bp-desktop--small) {
         display: none;
+    }
+
+    @include bp-max($bp-desktop--small) {
+        position: fixed;
+        bottom: 0;
     }
 }
