@@ -1,0 +1,24 @@
+.arrow {
+    height: 15px;
+    width: auto;
+    margin-right: 1rem;
+    transition-duration: 0.25s;
+}
+
+.arrow--invert {
+    @extend .arrow;
+    transform: rotateZ(180deg);
+}
+.answer-wrapper {
+    max-height: 300px;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    transition-delay: 0s;
+}
+
+.answer-wrapper--closed {
+    @extend .answer-wrapper;
+    max-height: 0px;
+    opacity: 0;
+    transition-delay: -0.2s;
+}

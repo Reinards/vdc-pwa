@@ -10,7 +10,7 @@ function Benefit({children, imgUrl, alt, title}) {
                 height="200"
                 />
             <h3 className="white mr--lighter f3">{title}</h3>
-            <p className="white w-60 mt0 mb5">
+            <p className="white w-90 w-60-ns mt0 mb5 paragraph1 tj tc-ns">
                 {children}
             </p>
         </div>

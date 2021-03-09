@@ -9,14 +9,16 @@ export default function Atveselosanas() {
   return (
     <DefaultLayout headerUrl="/img1.jpg">
     
-      <Head>
-        <title>TODO - VDC</title>
-      </Head>
+        <Head>
+            <title>VDC - Atveseļošanās</title>
+            <meta name="title" content="VDC - Atveseļošanās" />
+            {/* <meta name="description" content="Description" /> */}
+        </Head>
       
-        <div className="pa4 pa5-l ph7-l mh7-l">
-            <h1 className="tc pb4 f2 mt0 mb0">Atveseļošanās</h1>
+        <div className="mc">
+            <h1 className="tc f4 f2-l mt0">Atveseļošanās</h1>
            
-            <div className="flex items-center f3">
+            <div className="flex items-center paragraph1">
                 <div className="w-50">
                     <p>Cilvēks sastāv no ķermeņa, prāta un enerģētikas.</p>
                 </div>
@@ -25,7 +27,7 @@ export default function Atveselosanas() {
                 </div>
             </div>
 
-            <p className="f3 mt5 pb0 mb0">
+            <p className="paragraph1 mt5 pb0 mb0">
                 Tad, kad visas trīs daļas darbojas saskaņoti, sev pieļaujamo normu robežās, - šādu sistēmu sauc par veselu, mūsu gadījumā - veselu cilvēku.
                 <br/><br/>
                 Tikko kādā no sistēmas veidojošajām daļām parādās darbības traucējumi, - šādu sistēmu jeb cilvēku mēs apzīmējam ar vārdu slims. Atkarībā no tā, kurā daļā radusies problēma:
@@ -45,33 +47,27 @@ export default function Atveselosanas() {
                 Cilvēka enerģētiski veidojošā daļa sastāv no vairākām savstarpēji saistītām sistēmām. Šo sistēmu darbība nodrošina gan cilvēka mijiedarbību ar apkārtējo vidi, gan regulē energoinformatīvo procesu norisi cilvēka fiziskajā ķermenī, gan arī ārpus tā - biolaukā.
                 <br/><br/>
 
-                <div className="flex">
-                    <div className="w-third pa4">
-                        <div className={css["rectangle"]+" flex flex-column pa3 items-center tc justify-center h-100"}>
-                            <span>Trauksme</span>
-                            <span>Apātija</span>
-                            <span>Bezmiegs</span>
-                            <span>Noslēgtība</span>
-                            <span>Hipo</span>
+                <div className="flex relative flex-wrap">
+                    <div className={css["rectangle-wrapper"]+" w-100 w-50-l pa1-ns pa4-l"}>
+                        <div className={css["rectangle"]+" uppercase flex flex-column items-center tc justify-center h-100 pv4"}>
+                            <span className="pa2 paragraph1">Trauksme</span>
+                            <span className="pa2 paragraph1">Apātija</span>
+                            <span className="pa2 paragraph1">Bezmiegs</span>
+                            <span className="pa2 paragraph1">Noslēgtība</span>
+                            <span className="pa2 paragraph1">Hipo</span>
                         </div>
                     </div>
-                    <div className="w-third pa3 flex items-center">
-                        <div style={{
-                            display: "block"
-                        }} className="w-100">
-                            <Image src="/arrow.png" alt="Bulta pa labi" width="500" height="500" layout="responsive" />
+                    <div className="w-100 w-50-l pa1-ns pa4-l">
+                        <div className={css["rectangle"]+" uppercase flex flex-column items-center tc justify-center h-100 pv4"}>
+                            <span className="pa2 paragraph1">Iekšējs miers</span>
+                            <span className="pa2 paragraph1">Dzīvesprieka</span>
+                            <span className="pa2 paragraph1">Optimisms</span>
+                            <span className="pa2 paragraph1">Vesselīgs miegs</span>
+                            <span className="pa2 paragraph1">Sociāli aktīvs</span>
+                            <span className="pa2 paragraph1">Objektīvs veselības novērtējums</span>
                         </div>
                     </div>
-                    <div className="w-third pa4">
-                        <div className={css["rectangle"]+" flex flex-column pa3 items-center tc justify-center h-100"}>
-                            <span>Iekšējs miers</span>
-                            <span>Dzīvesprieka</span>
-                            <span>Optimisms</span>
-                            <span>Vesselīgs miegs</span>
-                            <span>Sociāli aktīvs</span>
-                            <span>Objektīvs veselības novērtējums</span>
-                        </div>
-                    </div>
+                    <img className={css.arrow} src="/arrow.png" alt="Bulta pa labi"/>
                 </div>
                 <br/>
 

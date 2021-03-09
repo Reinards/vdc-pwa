@@ -2,11 +2,10 @@
 @import "../../styles/vars.scss";
 
 
-$navbar-opacity: 0.95;
+$navbar-opacity: 0.91;
 
 // Acts as a height placeholder
 .staticWrapper {
-    // height: $height-navbar-mobile;
     position: relative;
     outline: 0;
 }
@@ -19,13 +18,13 @@ $navbar-opacity: 0.95;
     width: 100%;
     position: fixed;
     left: -100vw;
-    background-color: rgba(0, 0, 0, 0.897);
+    background-color: rgba(0, 0, 0, 1);
     min-height: calc(100vh - 4.5rem);
     transition: all 0.5s;
     opacity: 0;
     z-index: 2;
     outline: 0;
-        
+    
     // Mobile only
     ul li {
         width: 100%;
@@ -51,6 +50,19 @@ $navbar-opacity: 0.95;
             width: unset;
             padding: 0rem;
             height: 100%;
+            font-size: 0.9em;
+
+            a, span {
+                padding: 1.2rem 1.5rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        ul li {
+            width: unset;
+            padding: 0rem;
+            height: 100%;
 
             a, span {
                 padding: 1.5rem 2rem;
@@ -63,7 +75,7 @@ $navbar-opacity: 0.95;
     transition: left 0.5s;
     
     left: 0vw;
-    opacity: 1;
+    opacity: $navbar-opacity;
 }
 
 .link {
@@ -72,21 +84,31 @@ $navbar-opacity: 0.95;
         cursor: pointer;
         color: white;
         text-decoration: none;
+        padding: 1rem;
         
         &:hover {
             background-color: rgba(255,255,255,0.15);
         }
-    }
-}
 
-.active {
-    a {
-        background-color: rgba(255,255,255,0.15);
+        @include bp-min($bp-desktop--small) {
+            padding: 0;
+        }
+    }
+
+    .active {
+        border-left: 3px solid white;
+        background-color: rgba(255,255,255,0.1);
+        border-radius: 3px;
+
+        @include bp-min($bp-desktop--small) {
+            background-color: rgba(255,255,255,0.15);
+            border: none;
+        }
     }
 }
 
 .toggle {
-    background-color: rgba(0, 0, 0, 0.897);
+    background-color: rgba(0, 0, 0, 1);
     width: 100%;
     cursor: pointer;
     height: $height-navbar-mobile;
@@ -99,8 +121,8 @@ $navbar-opacity: 0.95;
     opacity: $navbar-opacity;
     
     img {
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     @media screen and (min-width: $bp-desktop--small) {

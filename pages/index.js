@@ -16,14 +16,16 @@ export default function Home() {
     <DefaultLayout headerUrl="/img5.jpg">
     
       <Head>
-        <title>TODO - VDC</title>
+        <title>VDC - Sākumlapa - Atgūsti mieru</title>
+        <meta name="title" content="Veģetatīvās Distonijas Centrs. Atgūsti mieru!" />
+        {/* <meta name="description" content="Description" /> */}
       </Head>
       
       {/* Landing header banner */}
       
       <div className={css["promise-banner"]}>
-        <div className="flex justify-center">
-          <div className="w-50-xl flex items-top">
+        <div className="flex justify-center items-center h-100 ">
+          <div className="flex items-top ">
             <div className="">
               <motion.div
                   transition= {{
@@ -36,7 +38,7 @@ export default function Home() {
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ x: 0, opacity: 0 }}
                 >
-              <h2 className="mr--lighter f4 f1-l uppercase ma0">Mēs palīdzēsim tev atgūt</h2>
+              <h2 className="mr--lighter uppercase ma0 ">Mēs palīdzēsim tev atgūt</h2>
               </motion.div>
               <motion.div
                   transition= {{
@@ -49,7 +51,7 @@ export default function Home() {
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ x: 0, opacity: 0 }}
                 >
-              <span className="mr--lighter uppercase f6 f2-l mt0">Bez medikamentiem</span>
+              <small className="mr--lighter uppercase mt0">Bez medikamentiem</small>
               </motion.div>
             </div>
             <motion.div
@@ -70,7 +72,7 @@ export default function Home() {
       </div>
       
       {/* Causes */}
-      <div className="ph3 ph7-l pb5 pt0 tc flex flex-column items-center">
+      <div className="wc tc flex flex-column items-center">
         <h2 className="pv5 mr--light f4 f2-l w-80 w-50-l">Vai tev kaut reizi bez acīmredzama iemesla ir traucējuši šie simptomi?</h2>
 
         <div>
@@ -90,8 +92,8 @@ export default function Home() {
       </div>
       
       {/* Benefits */}
-      <div className={css["benefit-banner"]+" ph3 ph6-l pb2 pb5-l pt0 tc"}>
-        <h2 className="pv5 mr--lighter white f4 f2-l uppercase">Ko tu iegūsi</h2>
+      <div className={css["benefit-banner"]+" wc tc"}>
+        <h2 className="pv5 mr--lighter white f4 f2-l uppercase">Ko tu iegūsi apmeklējot seansus</h2>
         
         <div className="flex flex-wrap">
           <div className="w-100 w-third-l">
@@ -128,15 +130,15 @@ export default function Home() {
       
       {/* BIO */}
       <div className="flex flex-wrap">
-        <div className="w-100 w-70-l flex flex-column justify-center items-center pv5 pv6-l mh4 ph6-l mh0-l">
+        <div className="w-100 w-70-l flex flex-column justify-center items-center wc">
           <h1 className="script brown-1 f0--smaller fw1 mv0">Ivars Tilgalis</h1>
-          <p className="ph7-l tj">
+          <p className="tj paragraph1">
             Esmu "Veģetatīvās Distonijas Centrs" dibinātājs un vadītājs Ivars Tilgalis. Kā to parāda mana prakse, strādājot ar cilvēkiem, varu teikt, ka lielākajā vairumā slimības fiziskās izpausmes ir tikai gala projekcija procesiem, kuru sākumu varam meklēt daudz smalkākā sfērā - cilvēka enerģētikā un tajā notiekošajos energoinformatīvajos procesos...
           </p>
-          <button className="button--brown mt3 w-100 w-auto-l">Lasīt vairāk</button>
+          <button className="button--brown mt3 w-100 w-auto-l paragraph1">Lasīt vairāk</button>
         </div>
         
-        <div className="w-100 w-30-l">
+        <div className="w-100 dn-m w-30-l">
           <Image 
             src="/img2.jpg"
             alt="Ivars Tilgalis"

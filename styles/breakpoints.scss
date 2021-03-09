@@ -1,5 +1,10 @@
 $bp-desktop--small: 1024px;
+$bp-desktop--small2: 1280px;
+$bp-desktop: 1440px;
 $bp-mobile--large: 720px;
+$bp-tablet: 768px;
+$bp-tablet--large: 960px;
+$bp-mobile: 425px;
 
 @mixin bp-min($bp) {
     @media (min-width: $bp) {

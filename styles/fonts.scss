@@ -72,3 +72,11 @@
     font-size: 5rem;
 }
 
+// Paragraph sizes
+.paragraph1 {
+    font-size: 0.9rem;
+
+    @include bp-min($bp-desktop--small) {
+        font-size: 1.1rem;
+    }
+}

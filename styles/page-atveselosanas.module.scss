@@ -1,5 +1,27 @@
 @import "./colors.scss";
+@import "./breakpoints.scss";
 
 .rectangle {
     background-color: $col-gray-2;
+    color: white;
+}
+
+.rectangle-wrapper:first-child {
+    @include bp-max($bp-desktop--small) {
+        padding-bottom: 5vw;
+    }
+}
+
+.arrow {
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    width: 15%;
+    transform: translateX(-50%) rotateZ(90deg);
+
+    @include bp-min($bp-desktop--small) {
+        transform: translateX(-50%);
+        top: 10vh;
+        width: 20%;
+    }
 }
