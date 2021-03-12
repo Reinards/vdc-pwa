@@ -4,7 +4,7 @@ function Contacts() {
     return (
         <div id="contacts" className={css['contacts']+" cc"}>
             <h2 className="white uppercase mr--lighter f4 f2-l tc mb3 mt0">Piesakies individuālajiem seansiem</h2>
-            <p className="script f0 brown-2 tc ma0 lh05">Un sac baudit dzivi</p>
+            <p className="script f0 brown-2 tc ma0 lh1">Un sac baudit dzivi</p>
 
             <div className="flex flex-column mt3">
                 <div className="input-group flex flex-wrap mt4 mt0-l">
@@ -34,7 +34,7 @@ function Contacts() {
                     </div>
                 </div>
                 <div className="flex justify-end">
-                    <button className="button--brown-2 w-100 w-20-l mt4 paragraph1">Pierakstīties</button>
+                    <button className="button--brown-2 w-100 w-20-l mt3 mt4-l paragraph1">Pieteikties</button>
                 </div>
             </div>
         </div>

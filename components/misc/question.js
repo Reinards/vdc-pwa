@@ -19,7 +19,7 @@ class Question extends Component {
     render() {
         return (
             <div className="ph3-ns">
-                <h2 onClick={this.toggleAnswer} className="f5 f4-l mb0 flex items-center pointer">
+                <h2 onClick={this.toggleAnswer} className="f5 mt0 f4-l mb0 flex items-center pointer">
                     <img className={this.state.answerOpen ? css["arrow--invert"] : css["arrow"]} src="/carret-down.svg" alt="Izvērst"/>
                     {this.props.title} 
                 </h2>

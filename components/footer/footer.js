@@ -12,16 +12,16 @@ function Footer() {
                 <h2 className="f4 mr--lighter mt0">Kontakti</h2>
                 
                 <div className="flex">
-                    <div className="w-20 f6 paragraph1 mt2">Adrese</div>
-                    <div className="w-80 f6 paragraph1 mt2">{WebsiteData.address}</div>
+                    <div className="w-40 w-20-l f6 paragraph1 mt2-l">Adrese</div>
+                    <div className="w-60 w-80-l f6 paragraph1 mt2-l">{WebsiteData.address}</div>
                 </div>
                 <div className="flex">
-                    <div className="w-20 f6 paragraph1 mt2">Tālrunis</div>
-                    <div className="w-80 f6 paragraph1 mt2">{WebsiteData.phone}</div>
+                    <div className="w-40 w-20-l f6 paragraph1 mt2">Tālrunis</div>
+                    <div className="w-60 w-80-l f6 paragraph1 mt2">{WebsiteData.phone}</div>
                 </div>
                 <div className="flex">
-                    <div className="w-20 f6 paragraph1 mt2">E-pasts</div>
-                    <div className="w-80 f6 paragraph1 mt2">{WebsiteData.email}</div>
+                    <div className="w-40 w-20-l f6 paragraph1 mt2">E-pasts</div>
+                    <div className="w-60 w-80-l f6 paragraph1 mt2">{WebsiteData.email}</div>
                 </div>
             </div>
             <div className="w-30-l flex justify-end mt4 mt0-l">

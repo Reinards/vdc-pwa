@@ -61,6 +61,10 @@
     line-height: 0.5;
 }
 
+.lh1 {
+    line-height: 1;
+}
+
 .f0 {
     font-size: 6rem;
     @include bp-max($bp-desktop--small) {
@@ -74,7 +78,7 @@
 
 // Paragraph sizes
 .paragraph1 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 
     @include bp-min($bp-desktop--small) {
         font-size: 1.1rem;

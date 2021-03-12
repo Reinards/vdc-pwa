@@ -2,12 +2,24 @@
 @import "../../styles/breakpoints.scss";
 
 .header-img {
-    height: 45vh;
+    height: 50vw;
     background-size: cover;
     background-position: center;
+    width: calc(100vw - $header-margins-mobile * 2);
+    margin-left: $header-margins-mobile;
+    margin-right: $header-margins-mobile;
+    box-shadow: 0px 4px 50px -20px rgba(0,0,0,0.2);
+    border-radius: 2px;
 
     @include bp-min($bp-desktop--small) {
+        box-shadow: 0px 4px 50px -20px rgba(0,0,0,0.5);
+    }
+    
+    @include bp-min($bp-desktop) {
         height: 75vh;
+        width: calc(100vw - $header-margins-desktop * 2);
+        margin-left: $header-margins-desktop;
+        margin-right: $header-margins-desktop;
     }
 }
 

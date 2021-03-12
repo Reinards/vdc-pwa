@@ -1,12 +1,13 @@
 @import "../../styles/breakpoints.scss";
 @import "../../styles/vars.scss";
+@import "../../styles/colors.scss";
 
 
 $navbar-opacity: 0.91;
 
 // Acts as a height placeholder
 .staticWrapper {
-    position: relative;
+    // position: relative;
     outline: 0;
 }
 
@@ -34,9 +35,77 @@ $navbar-opacity: 0.91;
         outline: 0;
     }
     
-    @media screen and (min-width: $bp-desktop--small) {
+    @media screen and (min-width: $bp-desktop) {
         position: fixed;
-        top: unset;
+        top: 0;
+        bottom: unset;
+        left: unset;
+        height: unset;
+        min-height: $height-navbar-mobile;
+        justify-content: center;
+        opacity: $navbar-opacity;
+        box-shadow: $shadow-1;
+        transition: none;
+        
+        ul li {
+            width: unset;
+            padding: 0rem;
+            height: 100%;
+            font-size: 0.9em;
+
+            a, span {
+                padding: 1.2rem 1.5rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        background-color: transparent;
+        box-shadow: none;
+        top: 6vh;
+        position: absolute;
+        
+        ul li {
+            width: unset;
+            padding: 0rem;
+            height: 100%;
+            
+            a, span {
+                color: black;
+                font-weight: 600;
+                padding: 1.5rem 2rem;
+            }
+        }
+    }
+}
+
+.listWrapper--floating {
+    min-height: $height-navbar-mobile;
+    display: flex;
+    bottom: $height-navbar-mobile;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    left: -100vw;
+    background-color: rgba(0, 0, 0, 1);
+    min-height: calc(100vh - 4.5rem);
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: 2;
+    outline: 0;
+    
+    // Mobile only
+    ul li {
+        width: 100%;
+        padding: 1.25rem 1.5rem;
+        list-style: none;
+        margin: 0;
+        outline: 0;
+    }
+    
+    @media screen and (min-width: $bp-desktop) {
+        position: fixed;
+        top: 0;
         bottom: unset;
         left: unset;
         height: unset;
@@ -87,10 +156,20 @@ $navbar-opacity: 0.91;
         padding: 1rem;
         
         &:hover {
-            background-color: rgba(255,255,255,0.15);
+            background-color: rgba(255,255,255,0.15);   
+        }
+        
+        @include bp-min($bp-desktop) {
+            border-bottom: 4px solid transparent;
+            border-radius: 0px;
+            
+            &:hover {
+                background-color: transparent;
+                border-bottom: 4px solid $col-brown-1;
+            }
         }
 
-        @include bp-min($bp-desktop--small) {
+        @include bp-min($bp-desktop) {
             padding: 0;
         }
     }
@@ -100,9 +179,15 @@ $navbar-opacity: 0.91;
         background-color: rgba(255,255,255,0.1);
         border-radius: 3px;
 
-        @include bp-min($bp-desktop--small) {
+        @include bp-min($bp-desktop) {
             background-color: rgba(255,255,255,0.15);
             border: none;
+        }
+        
+        @include bp-min($bp-desktop) {
+            background-color: transparent;
+            border-radius: 0px;            
+            border-bottom: 4px solid $col-brown-1;
         }
     }
 }
@@ -125,12 +210,40 @@ $navbar-opacity: 0.91;
         height: 1.5rem;
     }
 
-    @media screen and (min-width: $bp-desktop--small) {
+    @media screen and (min-width: $bp-desktop) {
         display: none;
     }
 
-    @include bp-max($bp-desktop--small) {
+    @include bp-max($bp-desktop) {
         position: fixed;
         bottom: 0;
+    }
+}
+
+.listWrapperAnimation {
+    animation: navbarEnter 0.25s forwards ease-in-out;
+}
+.listWrapperAnimationExit {
+    animation: navbarExit 0.25s forwards ease-in-out;
+}
+
+@keyframes navbarEnter {
+    0% {
+        top: -$height-navbar-mobile;
+        opacity: 0.2;
+    }
+    100% {
+        top: 0;
+        opacity: $navbar-opacity;
+    }
+}
+@keyframes navbarExit {
+    0% {
+        top: 0;
+        opacity: $navbar-opacity;
+    }
+    100% {
+        top: -$height-navbar-mobile;
+        opacity: 0.5;
     }
 }

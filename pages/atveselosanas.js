@@ -16,18 +16,18 @@ export default function Atveselosanas() {
         </Head>
       
         <div className="mc">
-            <h1 className="tc f4 f2-l mt0">Atveseļošanās</h1>
+            <h1 className="tc f4 f2-l mt0 pt0">Atveseļošanās</h1>
            
-            <div className="flex items-center paragraph1">
-                <div className="w-50">
+            <div className="flex flex-column-reverse flex-row-l items-center paragraph1">
+                <div className="w-100 w-50-l">
                     <p>Cilvēks sastāv no ķermeņa, prāta un enerģētikas.</p>
                 </div>
-                <div className="w-50">
-                    <Image src="/tris.png" alt="Cilvēks" width="200" height="200" layout="responsive" />
+                <div className="w-100 w-50-l">
+                    <Image src="/tris.png" alt="Cilvēks" width="150" height="150" layout="responsive" />
                 </div>
             </div>
 
-            <p className="paragraph1 mt5 pb0 mb0">
+            <p className="paragraph1 mt1 mt5-l pb0 mb0">
                 Tad, kad visas trīs daļas darbojas saskaņoti, sev pieļaujamo normu robežās, - šādu sistēmu sauc par veselu, mūsu gadījumā - veselu cilvēku.
                 <br/><br/>
                 Tikko kādā no sistēmas veidojošajām daļām parādās darbības traucējumi, - šādu sistēmu jeb cilvēku mēs apzīmējam ar vārdu slims. Atkarībā no tā, kurā daļā radusies problēma:

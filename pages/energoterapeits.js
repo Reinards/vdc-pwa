@@ -13,9 +13,9 @@ export default function Ivars() {
       </Head>
       
         <div className="mc">
-            <h1 className="tc f4 f2-l mt0">Ivars Tilgalis - Energoterapeits</h1>
+            <h1 className="tc f4 f2-l pt0 mt0">Ivars Tilgalis - Energoterapeits</h1>
 
-            <p className="paragraph1">
+            <p className="paragraph1 mt0 pt0">
                 Kopš sevi atceros, man ir bijusi interese par alternatīvām, netradicionālām atveseļošanas metodēm. Šīs intereses vadīts, devos uz Krieviju, kur vairāk nekā astoņus gadus apguvu zināšanas par cilvēka enerģētisko uzbūvi, par tās ietekmi uz cilvēka veselību un dzīvi kopumā. Praktiski visu brīvo laiku veltīju praktizēšanai, un ieguldītais laiks atmaksājās.
             </p>
 

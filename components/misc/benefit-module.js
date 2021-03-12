@@ -6,8 +6,8 @@ function Benefit({children, imgUrl, alt, title}) {
             <Image
                 src={imgUrl}
                 alt={alt}
-                width="200"
-                height="200"
+                width="150"
+                height="150"
                 />
             <h3 className="white mr--lighter f3">{title}</h3>
             <p className="white w-90 w-60-ns mt0 mb5 paragraph1 tj tc-ns">

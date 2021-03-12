@@ -14,9 +14,9 @@ export default function Buj() {
         </Head>
       
         <div className="mc">
-            <h1 className="tc mt0 pb4 f4 f2-l">Biežāk uzdotie jautājumi</h1>
+            <h1 className="tc f4 f2-l">Biežāk uzdotie jautājumi</h1>
 
-            <div className="">
+            <div className="mt0">
                 <Question title="Vai seansus var apmeklēt, esot stāvoklī, vai tas ir droši?">
                     Sievietēm, kuras ir gaidībās, seansi ir ne tikai droši, bet arī ieteicami.
                 </Question>

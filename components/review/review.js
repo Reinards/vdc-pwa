@@ -32,7 +32,7 @@ export default function Review() {
                     </div>
                 </div>
                 <div className="flex justify-end">
-                    <button className="button--brown-2 w-100 w-20-l mt4 paragraph1">Nosūtīt</button>
+                    <button className="button--brown-2 w-100 w-20-l mt3 mt4-l paragraph1">Nosūtīt</button>
                 </div>
             </div>
         </div>

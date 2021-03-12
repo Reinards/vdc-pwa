@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
+import Link from "next/link"
 
 import DefaultLayout from "../layouts/layout-default"
 import Simptomi from "../components/misc/simptomi-module"
@@ -73,7 +74,7 @@ export default function Home() {
       
       {/* Causes */}
       <div className="wc tc flex flex-column items-center">
-        <h2 className="pv5 mr--light f4 f2-l w-80 w-50-l">Vai tev kaut reizi bez acīmredzama iemesla ir traucējuši šie simptomi?</h2>
+        <h2 className="pv3 mr--light f4 f2-l w-80 w-50-l">Vai tev kaut reizi bez acīmredzama iemesla ir traucējuši šie simptomi?</h2>
 
         <div>
           <div className="flex flex-wrap justify-between">
@@ -131,11 +132,11 @@ export default function Home() {
       {/* BIO */}
       <div className="flex flex-wrap">
         <div className="w-100 w-70-l flex flex-column justify-center items-center wc">
-          <h1 className="script brown-1 f0--smaller fw1 mv0">Ivars Tilgalis</h1>
+          <p className="script brown-1 f0--smaller fw1 mv0">Ivars Tilgalis</p>
           <p className="tj paragraph1">
             Esmu "Veģetatīvās Distonijas Centrs" dibinātājs un vadītājs Ivars Tilgalis. Kā to parāda mana prakse, strādājot ar cilvēkiem, varu teikt, ka lielākajā vairumā slimības fiziskās izpausmes ir tikai gala projekcija procesiem, kuru sākumu varam meklēt daudz smalkākā sfērā - cilvēka enerģētikā un tajā notiekošajos energoinformatīvajos procesos...
           </p>
-          <button className="button--brown mt3 w-100 w-auto-l paragraph1">Lasīt vairāk</button>
+          <Link href="/energoterapeits"><button className="button--brown mt1 mt3-l w-100 w-auto-l paragraph1">Lasīt vairāk</button></Link>
         </div>
         
         <div className="w-100 dn-m w-30-l">
