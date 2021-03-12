@@ -73,7 +73,10 @@
     }
 }
 .f0--smaller {
-    font-size: 5rem;
+    font-size: 3rem;
+    @include bp-min($bp-desktop--small) {
+        font-size: 5rem;
+    }
 }
 
 // Paragraph sizes
