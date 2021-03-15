@@ -84,10 +84,10 @@ export default function Home() {
             <Simptomi lineWidth="35%" paddingRight="5">Spiedoša sajūta kuņģī, slikta dūša</Simptomi>
             <Simptomi lineWidth="35%" paddingRight="5">Svīšana, spiediena maiņa, drebuļi</Simptomi>
             <Simptomi lineWidth="35%" paddingRight="5">Zarnu funkcionālie traucējumi</Simptomi>
-            <Simptomi lineWidth="35%" paddingRight="5">Garastāvokļu maiņas, uzbudinātība, raaudulība</Simptomi>
+            <Simptomi lineWidth="35%" paddingRight="5">Garastāvokļu maiņas, uzbudinātība, raudulība</Simptomi>
             <Simptomi lineWidth="35%" paddingRight="5">Bezmiegs, koncentrēšanāās trūkums</Simptomi>
-            <Simptomi lineWidth="35%" paddingRight="5">Vājums, ātra fiziska un garīga pārslodzes sajūta</Simptomi>
-            <Simptomi lineWidth="35%" paddingRight="5">Sirdsklauves</Simptomi>
+            <Simptomi lineWidth="35%" paddingRight="5" bottom>Vājums, ātra fiziska un garīga pārslodzes sajūta</Simptomi>
+            <Simptomi lineWidth="35%" paddingRight="5" bottom>Sirdsklauves</Simptomi>
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@ export default function Home() {
       {/* BIO */}
       <div className="flex flex-wrap">
         <div className="w-100 w-70-l flex flex-column justify-center items-center wc">
-          <p className="script brown-1 f0--smaller fw1 mv0 lh05">Ivars Tilgalis</p>
+          <p className="script brown-1 f0--smaller fw1 mv0 pt3 lh05">Ivars Tilgalis</p>
           <p className="tj paragraph1">
             Esmu "Veģetatīvās Distonijas Centrs" dibinātājs un vadītājs Ivars Tilgalis. Kā to parāda mana prakse, strādājot ar cilvēkiem, varu teikt, ka lielākajā vairumā slimības fiziskās izpausmes ir tikai gala projekcija procesiem, kuru sākumu varam meklēt daudz smalkākā sfērā - cilvēka enerģētikā un tajā notiekošajos energoinformatīvajos procesos...
           </p>

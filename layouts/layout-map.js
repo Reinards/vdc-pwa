@@ -3,7 +3,7 @@ import Footer from '../components/footer/footer'
 
 function Default(props) {
     return (
-        <div>
+        <div id="layout-map">
             <Header headerUrl={props.headerUrl} showMap/>
             {props.children}
             <Footer />

@@ -3,7 +3,7 @@ import Footer from '../components/footer/footer'
 
 function Default(props) {
     return (
-        <div>
+        <div id="layout">
             <Header headerUrl={props.headerUrl}/>
             {props.children}
             <Footer />

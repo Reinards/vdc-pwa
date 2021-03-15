@@ -3,13 +3,18 @@
 
 .header-img {
     height: 50vw;
-    background-size: cover;
-    background-position: center;
+    // background-size: cover;
+    // background-position: center;
     width: calc(100vw - $header-margins-mobile * 2);
     margin-left: $header-margins-mobile;
     margin-right: $header-margins-mobile;
     box-shadow: 0px 4px 50px -20px rgba(0,0,0,0.2);
     border-radius: 2px;
+    overflow: hidden;
+
+    div {
+        height: 100%;
+    }
 
     @include bp-min($bp-desktop--small) {
         box-shadow: 0px 4px 50px -20px rgba(0,0,0,0.5);

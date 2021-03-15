@@ -28,11 +28,8 @@ class Header extends Component {
         return (
             <div>
                 <Navbar />
-                <div 
-                    className={Css['header-img']} 
-                    style={{
-                    backgroundImage: `url(${this.props.headerUrl})`
-                    }}>
+                <div className={Css['header-img']}>
+                    <Image src={this.props.headerUrl} width="1920" height="674" priority objectFit="cover" layout="responsive" />
                 </div>
                 
             </div>

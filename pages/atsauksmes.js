@@ -45,7 +45,7 @@ export default function Atsauksmes() {
                 <p className="paragraph1">
                     Par veģetatīvās distonijas centru dzirdēju no meitas. Kad gāju uz pirmo seansu jau neticēju, ka iespējams man kā palīdzēt. Jutos kā bezdibeņa malā, kurā varētu iekrist. Taču jau pēc pāris apmeklētiem seansiem atguvu iekšēju mieru, pazuda reiboņi, neizskaidrojamais satraukums. Paldies!
                 </p>
-                <p className="paragraph1 mt0">/Laura/</p>
+                <p className="paragraph1 mt0 mb0">/Laura/</p>
             </section>
         </div>
 

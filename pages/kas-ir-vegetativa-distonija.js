@@ -19,7 +19,7 @@ export default function AboutVD() {
                 Veģetatīvajai distonijai jeb somatoformai veģetatīvai disfunkcijai ir raksturīgi simptomi, kuri citkārt liecinātu par nopietnām veselības problēmām. Tādi simptomi kā sirdsklauves, trauksme, galvassāpes un reiboņi, pastiprināta svīšana, miega traucējumi, apetītes zudums un vēdera darbības traucējumi. Taču vēršoties pie ģimenes ārsta un veicot visus nepieciešamos izmeklējumus, lielākajā vairumā gadījumu nekāādas fiziska rakstura problēmas ķermenī netiek atklātas.
             </p>
 
-            <p className="paragraph1">
+            <p className="paragraph1 mb0">
                 Šī iemesla dēļ varam apzīmēt veģetatīvo distoniju kā diskomfortu radošu stāvokli, kurā diskomfortu radošie simptomi izpaužas fiziskā veidā, taču medicīniski pamatots iemesls tam netiek atrasts.
             </p>
         </div>
