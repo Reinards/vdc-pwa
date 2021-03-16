@@ -93,7 +93,7 @@ export default function Home() {
       </div>
       
       {/* Benefits */}
-      <div className={css["benefit-banner"]+" pt4 pb4 pb5-l tc"}>
+      <div className={css["benefit-banner"]+" ph4 ph0-l pt4 pb4 pb5-l tc"}>
         <h2 className="pv5-l mr--lighter white f4 f2-l uppercase">Ko tu iegūsi apmeklējot seansus</h2>
         
         <div className="flex flex-wrap">
