@@ -3,7 +3,8 @@
 @import "../../styles/colors.scss";
 
 
-$navbar-opacity: 0.91;
+$navbar-opacity: 0.95;
+$navbar-background: #8B7766;
 
 // Acts as a height placeholder
 .staticWrapper {
@@ -19,7 +20,7 @@ $navbar-opacity: 0.91;
     width: 100%;
     position: fixed;
     left: -100vw;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: $navbar-background;
     min-height: calc(100vh - 4.5rem);
     transition: all 0.5s;
     opacity: 0;
@@ -87,7 +88,7 @@ $navbar-opacity: 0.91;
     width: 100%;
     position: fixed;
     left: -100vw;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: $navbar-background;
     min-height: calc(100vh - 4.5rem);
     transition: all 0.5s;
     opacity: 0;
@@ -164,8 +165,8 @@ $navbar-opacity: 0.91;
             border-radius: 0px;
             
             &:hover {
-                background-color: transparent;
-                border-bottom: 4px solid $col-brown-1;
+                background-color: rgba(255,255,255,0.15);
+                // border-bottom: 4px solid $col-brown-1;
             }
         }
 
@@ -185,15 +186,15 @@ $navbar-opacity: 0.91;
         }
         
         @include bp-min($bp-desktop) {
-            background-color: transparent;
+            background-color: rgba(255,255,255,0.15);
             border-radius: 0px;            
-            border-bottom: 4px solid $col-brown-1;
+            // border-bottom: 4px solid $col-brown-1;
         }
     }
 }
 
 .toggle {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: $navbar-background;
     width: 100%;
     cursor: pointer;
     height: $height-navbar-mobile;
@@ -201,7 +202,7 @@ $navbar-opacity: 0.91;
     align-items: center;
     position: fixed;
     z-index: 5;
-    box-shadow: $shadow-1;
+    // box-shadow: $shadow-1;
     outline: 0;
     opacity: $navbar-opacity;
     

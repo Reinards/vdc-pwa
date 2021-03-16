@@ -18,21 +18,19 @@ export default function Atveselosanas() {
         <div className="mc">
             <h1 className="tc f4 f2-l mt0 pt0">Atveseļošanās</h1>
            
-            <div className="flex flex-column-reverse flex-row-l items-center paragraph1">
-                <div className="w-100 w-50-l">
-                    <p>Cilvēks sastāv no ķermeņa, prāta un enerģētikas.</p>
-                </div>
-                <div className="w-100 w-50-l">
+            <div className="flex justify-center paragraph1">
+                <div className="w-50 w-40-l mb4 mb0-l">
                     <Image src="/tris.png" alt="Cilvēks" width="150" height="150" layout="responsive" />
                 </div>
             </div>
 
-            <p className="paragraph1 mt1 mt5-l pb0 mb0">
+            <p className="paragraph1 mt1 mt4-l pb0 mb0">
+                Cilvēks sastāv no ķermeņa, prāta un enerģētikas.
                 Tad, kad visas trīs daļas darbojas saskaņoti, sev pieļaujamo normu robežās, - šādu sistēmu sauc par veselu, mūsu gadījumā - veselu cilvēku.
                 <br/><br/>
                 Tikko kādā no sistēmas veidojošajām daļām parādās darbības traucējumi, - šādu sistēmu jeb cilvēku mēs apzīmējam ar vārdu slims. Atkarībā no tā, kurā daļā radusies problēma:
 
-                <ul>
+                <ul className={css.list}>
                     <li className="mt3">
                         ja fiziskajā ķermenī, tad par fiziski slims
                     </li>
@@ -54,13 +52,13 @@ export default function Atveselosanas() {
                             <span className="pa2 paragraph1">Apātija</span>
                             <span className="pa2 paragraph1">Bezmiegs</span>
                             <span className="pa2 paragraph1">Noslēgtība</span>
-                            <span className="pa2 paragraph1">Hipo</span>
+                            <span className="pa2 paragraph1">Hipohondrija</span>
                         </div>
                     </div>
                     <div className="w-100 w-50-l pa1-ns pa4-l">
                         <div className={css["rectangle"]+" uppercase flex flex-column items-center tc justify-center h-100 pv4"}>
                             <span className="pa2 paragraph1">Iekšējs miers</span>
-                            <span className="pa2 paragraph1">Dzīvesprieka</span>
+                            <span className="pa2 paragraph1">Dzīvesprieks</span>
                             <span className="pa2 paragraph1">Optimisms</span>
                             <span className="pa2 paragraph1">Vesselīgs miegs</span>
                             <span className="pa2 paragraph1">Sociāli aktīvs</span>

@@ -19,12 +19,12 @@ class Question extends Component {
     render() {
         return (
             <div className="ph3-ns">
-                <h2 onClick={this.toggleAnswer} className="f5 mt0 f4-l mb0 flex items-center pointer">
+                <h3 onClick={this.toggleAnswer} className="f5 mt0 f4-l mb2 pb0 flex items-center pointer">
                     <img className={this.state.answerOpen ? css["arrow--invert"] : css["arrow"]} src="/carret-down.svg" alt="Izvērst"/>
                     {this.props.title} 
-                </h2>
+                </h3>
                 <div id={"answer-"+this.tmpId} className={this.state.answerOpen ? css["answer-wrapper"] : css["answer-wrapper--closed"]}>
-                    <p className="paragraph1 mt2 pl4 pr4 pr0-l">
+                    <p className="paragraph1 mt0 pl4 pr4 pr0-l">
                         {this.props.children}
                     </p>
                 </div>

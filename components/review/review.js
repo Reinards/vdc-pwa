@@ -1,6 +1,14 @@
 import css from "./review.module.scss"
 import Image from "next/image"
 
+function getCurrentDate () {
+    let currentDate = new Date();
+    let cDay = currentDate.getDate()
+    let cMonth = currentDate.getMonth() + 1
+    let cYear = currentDate.getFullYear()
+    return cDay+"/"+cMonth+"/"+cYear;
+}
+
 export default function Review() {
     return (
         <div className={css['review-form']+" cc"}>
@@ -21,8 +29,8 @@ export default function Review() {
                         <input className="mv3" id="name" type="text" placeholder="Vārds"/>
                     </div>
                     <div className="w-100 w-50-ns flex flex-column">
-                        <label className="white uppercase paragraph1" htmlFor="date">Datums</label>
-                        <input className="mv3" id="date" type="date" placeholder="Datums"/>
+                        <label className="white uppercase paragraph1 no-click" htmlFor="date">Datums</label>
+                        <input className="mv3 no-click" id="date" type="text" placeholder="Datums" value={getCurrentDate()}/>
                     </div>
                 </div>
                 <div className="input-group flex flex-wrap">

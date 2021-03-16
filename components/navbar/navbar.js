@@ -22,13 +22,13 @@ class Navbar extends Component {
     
     navbarReference = React.createRef;
     
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll, true);
-    }
+    // componentDidMount() {
+    //     // window.addEventListener('scroll', this.handleScroll, true);
+    // }
     
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
+    // componentWillUnmount() {
+    //     // window.removeEventListener('scroll', this.handleScroll);
+    // }
     
     toggleState = () => {
         this.setState({navbarOpen: !this.state.navbarOpen});
@@ -67,9 +67,7 @@ class Navbar extends Component {
                 </div>
                 
                 <div ref={this.navbarReference} 
-                className={this.state.navbarOpen ? css.listWrapper+" "+css.onNavbarOpen : 
-                           (this.state.navbarEnter && !this.state.navbarExit ? css["listWrapper--floating"]+" "+css["listWrapperAnimation"] : 
-                            (this.state.navbarExit ? css["listWrapper--floating"]+" "+css["listWrapperAnimationExit"] : css.listWrapper))}>
+                className={this.state.navbarOpen ? css.listWrapper+" "+css.onNavbarOpen : css["listWrapper--floating"]}>
                 
                     <ul className="flex justify-center flex-wrap pa0 ma0">
                         <li className={css.link+" hover"}>

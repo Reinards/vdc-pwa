@@ -25,3 +25,17 @@
         width: 20%;
     }
 }
+
+.list {
+    list-style: none;
+    li:before { 
+        content: '•'; 
+        margin-left: -30px; 
+        margin-right: 10px; 
+        font-size: 2rem; 
+        height: 20px; 
+        line-height: 0; 
+        position: relative;
+        top: 2px;
+    } 
+}
