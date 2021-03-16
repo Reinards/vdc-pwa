@@ -16,7 +16,8 @@ let sendMail = () => {
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: 'Reinards', phone: '12132', email: "Email", message: "message"})
+        body: JSON.stringify({ name: 'Reinards', phone: '12132', email: "Email", message: "message"}),
+        mode: 'no-cors'
     };
     
     fetch(targetUrl, requestOptions)
