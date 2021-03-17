@@ -72,8 +72,6 @@ class Contacts extends Component {
     
     sendMail = (e) => {
         e.preventDefault();
-
-        let errorCount = 0;
     
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
@@ -81,28 +79,30 @@ class Contacts extends Component {
         let message = document.getElementById("message").value;
         let date = document.getElementById("date").value;
     
-        errorCount = (!this.verifyFields("name", name)) ? errorCount+1 : errorCount;
-        errorCount = (!this.verifyFields("message", message)) ? errorCount+1 : errorCount;
-        errorCount = (!this.verifyFields("phone", phone)) ? errorCount+1 : errorCount;
-        errorCount = (!this.verifyFields("email", email)) ? errorCount+1 : errorCount;
+        this.verifyFields("name", name);
+        this.verifyFields("message", message);
+        this.verifyFields("phone", phone);
+        this.verifyFields("email", email);
 
-        if(errorCount>0) return;
-
-    
-        let proxyUrl = 'https://secret-ocean-49799.herokuapp.com/';
-        let targetUrl = 'https://vdce.lv/mailer/index.php';
-        
-        const requestOptions = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name: name, phone: phone, email: email, message: message, date:date}),
-            mode: 'no-cors'
-        };
-        
-        fetch(proxyUrl + targetUrl, requestOptions)
-        .then(res => {
-            console.log(res);
-        });
+        if(this.state.nameErrorType=="none"
+        && this.state.phoneErrorType=="none"
+        && this.state.emailErrorType=="none"
+        && this.state.messageErrorType=="none") {
+            let proxyUrl = 'https://secret-ocean-49799.herokuapp.com/';
+            let targetUrl = 'https://vdce.lv/mailer/index.php';
+            
+            const requestOptions = {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: name, phone: phone, email: email, message: message, date:date}),
+                mode: 'no-cors'
+            };
+            
+            fetch(proxyUrl + targetUrl, requestOptions)
+            .then(res => {
+                console.log(res);
+            });
+        }
     }
 
     realTimeVerify = (e) => {
