@@ -98,7 +98,7 @@ class Contacts extends Component {
                 mode: 'no-cors'
             };
             
-            fetch(proxyUrl + targetUrl, requestOptions)
+            fetch(targetUrl, requestOptions)
             .then(res => {
                 console.log(res);
             });
