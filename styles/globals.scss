@@ -147,7 +147,7 @@ body {
     padding-top: $header-margins-mobile;
 
     @include bp-min($bp-desktop) {
-        padding-top: $header-margins-desktop;
+        padding-top: $header-margin-top-desktop;
     }
 }
 
@@ -163,4 +163,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .no-click {
     pointer-events: none;
+}
+
+.ntc {
+    text-transform: unset !important;
 }

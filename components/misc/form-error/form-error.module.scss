@@ -1,0 +1,21 @@
+@import "../../../styles/breakpoints.scss";
+
+.error {
+    background-color: rgb(221, 74, 74);
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    display: block;
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-weight: bold;
+    transition-duration: 0.25s;
+    margin-top: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.errorHidden {
+    display: none;
+}

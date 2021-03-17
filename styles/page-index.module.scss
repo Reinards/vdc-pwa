@@ -71,8 +71,8 @@
     @include bp-min($bp-desktop) {
         width: 60vw;
         margin-left: $header-margins-desktop;
-        transform: translateX(-2vw) translateY(-20vh);
-        margin-bottom: -15vh;
+        transform: translateX(-2vw) translateY(-30vh);
+        margin-bottom: -25vh;
     }
 }
 

@@ -21,7 +21,7 @@
     }
     
     @include bp-min($bp-desktop) {
-        height: 50vh;
+        height: 45vh;
         width: calc(100vw - $header-margins-desktop * 2);
         margin-left: $header-margins-desktop;
         margin-right: $header-margins-desktop;

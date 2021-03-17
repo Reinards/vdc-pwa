@@ -18,8 +18,7 @@ export default function Review() {
                 <Image src="/koks.png"
                 width="1000"
                 height="1000"
-                alt="Lapas"
-                className={css.leaves}/>  
+                alt="Lapas"/>  
             </div>  
             
             <div className="flex flex-column">

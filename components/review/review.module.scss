@@ -7,9 +7,10 @@
     right: 0;
     width: 25%;
     height: 25%;
+    opacity: 0.8;
 
     @include bp-min($bp-desktop--small) {
-        top: 0;
+        top: 25px;
     }
 }
 
