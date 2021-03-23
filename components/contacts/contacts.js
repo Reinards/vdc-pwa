@@ -125,7 +125,7 @@ class Contacts extends Component {
                 </div> 
             </Fade>
 
-            <form action="" className="flex flex-column mt3">
+            <form className="flex flex-column mt3">
                 <div className="input-group flex flex-wrap mt4 mt0-l">
                     <div className="w-100 w-50-ns flex flex-column pr3-ns">
                         <label className="white uppercase paragraph1" htmlFor="name">Vārds</label>
@@ -152,7 +152,7 @@ class Contacts extends Component {
                     </div>
                     <div className="w-100 w-50-ns flex flex-column">
                         <label className="white uppercase paragraph1 no-click" htmlFor="date">Datums</label>
-                        <input className="mt3 no-click" id="date" type="text" placeholder="Datums" value={getCurrentDate()}/>
+                        <input className="mt3 no-click" id="date" type="text" placeholder="Datums" defaultValue={getCurrentDate()}/>
                     </div>
                 </div>
                 <div className="input-group flex flex-wrap pt4 pt0-ns">

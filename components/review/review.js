@@ -32,7 +32,7 @@ export default function Review() {
                     </div>
                     <div className="w-100 w-50-ns flex flex-column">
                         <label className="white uppercase paragraph1 no-click" htmlFor="date">Datums</label>
-                        <input className="mv3 no-click" id="date" type="text" placeholder="Datums" value={getCurrentDate()}/>
+                        <input className="mv3 no-click" id="date" type="text" placeholder="Datums" defaultValue={getCurrentDate()}/>
                     </div>
                 </div>
                 <div className="input-group flex flex-wrap">

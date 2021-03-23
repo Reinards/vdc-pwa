@@ -5,8 +5,6 @@ import React from "react"
 import css from "./navbar.module.scss"
 import { Link as ScrollLink } from "react-scroll"
 import WebsiteData from '../../data/website.config.json'
-import Swipe from 'react-easy-swipe';
-
 
 let lastScrollY = 0;
 
@@ -20,31 +18,11 @@ class Navbar extends Component {
             navbarExit: false,
             navbarExitComplete: false
         }
+
     }
 
-    onSwipeStart(event) {
-        console.log('Start swiping...', event);
-        alert("swipe start");
-      }
- 
-      onSwipeMove(position, event) {
-        console.log(`Moved ${position.x} pixels horizontally`, event);
-        console.log(`Moved ${position.y} pixels vertically`, event);
-      }
-     
-      onSwipeEnd(event) {
-        console.log('End swiping...', event);
-      }
-    
     navbarReference = React.createRef;
-    
-    // componentDidMount() {
-    //     // window.addEventListener('scroll', this.handleScroll, true);
-    // }
-    
-    // componentWillUnmount() {
-    //     // window.removeEventListener('scroll', this.handleScroll);
-    // }
+
     
     toggleState = () => {
         this.setState({navbarOpen: !this.state.navbarOpen});
@@ -73,13 +51,13 @@ class Navbar extends Component {
         }
     }
     
+    // Called when swipe action occures
+    onSwipe = () => {
+        this.toggleState();
+    }
+
     render() {
         return (
-            <Swipe
-        onSwipeStart={this.onSwipeStart}
-        onSwipeMove={this.onSwipeMove}
-        onSwipeEnd={this.onSwipeEnd}>
-
             <div className={css.staticWrapper}>
                 <div className={css.toggle+" flex justify-around pa4"}>
                     <a href={`https://wa.me/${WebsiteData.phoneInternational}`}><img className="animate-shake" src="/phone.svg" alt="Zvanīt"/></a>
@@ -115,7 +93,6 @@ class Navbar extends Component {
                     </ul>
                 </div>
             </div>
-        </Swipe>
         )
     }
 }
