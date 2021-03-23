@@ -1,5 +1,4 @@
 import Head from "next/head"
-
 import DefaultLayout from "../layouts/layout-default"
 import Question from "../components/misc/question"
 

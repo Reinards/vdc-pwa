@@ -1,5 +1,6 @@
 import css from "./review.module.scss"
 import Image from "next/image"
+import Fade from "react-reveal/Fade"
 
 function getCurrentDate () {
     let currentDate = new Date();
@@ -15,10 +16,12 @@ export default function Review() {
             <h2 className="white uppercase mr--lighter f4 f2-l tc mt0">Būsim pateicīgi, ja atstāsi arī savu atsauksmi</h2>
  
             <div className={css.leaves}>
+                <Fade delay={200}>
                 <Image src="/koks.png"
                 width="1000"
                 height="1000"
                 alt="Lapas"/>  
+                </Fade>
             </div>  
             
             <div className="flex flex-column">

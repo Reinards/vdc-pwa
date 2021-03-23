@@ -6,6 +6,7 @@ import DefaultLayout from "../layouts/layout-default"
 import Simptomi from "../components/misc/simptomi-module"
 import Benefit from "../components/misc/benefit-module"
 import Contacts from "../components/contacts/contacts"
+import Fade from 'react-reveal/Fade';
 
 import { motion } from 'framer-motion';
 
@@ -13,8 +14,9 @@ import { motion } from 'framer-motion';
 import css from "../styles/page-index.module.scss"
 
 export default function Home() {
+
   return (
-    <DefaultLayout headerUrl="/img5.jpg">
+    <DefaultLayout headerUrl="/lauks.png">
     
       <Head>
         <title>VDC - Sākumlapa - Atgūsti mieru</title>
@@ -94,8 +96,9 @@ export default function Home() {
       
       {/* Benefits */}
       <div className={css["benefit-banner"]+" wc pt4 pb4 pb5-l tc"}>
-        <h2 className="pv5-l mr--lighter white f4 f2-l uppercase">Ko tu iegūsi apmeklējot seansus</h2>
-        
+        <Fade delay={100}>
+          <h2 className="pv5-l mr--lighter white f4 f2-l uppercase">Ko tu iegūsi apmeklējot seansus</h2>
+        </Fade>
         <div className="flex flex-wrap">
           <div className="w-100 w-third-l mb4 mb0-l">
             <Benefit
@@ -131,6 +134,7 @@ export default function Home() {
       
       {/* BIO */}
       <div className="flex flex-wrap">
+        <Fade cascade delay={100}>
         <div className="w-100 w-70-l flex flex-column justify-center items-center wc">
           <p className="script brown-1 f0--smaller fw1 mv0 pt3 lh05">Ivars Tilgalis</p>
           <p className="tj paragraph1">
@@ -138,16 +142,19 @@ export default function Home() {
           </p>
           <Link href="/energoterapeits"><button className="button--brown mt1 mt3-l w-100 w-auto-l paragraph1">Lasīt vairāk</button></Link>
         </div>
+        </Fade>
         
-        <div className="w-100 dn-m w-30-l">
-          <Image 
-            src="/img2.jpg"
-            alt="Ivars Tilgalis"
-            layout="responsive"
-            width="4978px"
-            height="6338px"
-          />
-        </div>
+          <div className="w-100 dn-m w-30-l">
+          <Fade delay={200}>
+              <Image 
+                src="/img2.jpg"
+                alt="Ivars Tilgalis"
+                layout="responsive"
+                width="4978px"
+                height="6338px"
+              />
+          </Fade>
+          </div>
       </div>
       
       {/* Contacts */}

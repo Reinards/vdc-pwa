@@ -1,5 +1,5 @@
 import Head from "next/head"
-
+import Fade from "react-reveal/Fade";
 import Review from "../components/review/review"
 import DefaultLayout from "../layouts/layout-default"
 
@@ -12,6 +12,7 @@ export default function Atsauksmes() {
       </Head>
       
         <div className="mc">
+            <Fade cascade duration={1000}>
             <h1 className="tc f4 f2-l mv0 pv0">Atsauksmes</h1>
             <section>
                 <p className="paragraph1 mb1 pt0 mt0">
@@ -43,7 +44,7 @@ export default function Atsauksmes() {
 
             <section className="mt4 mb1 mt5-l mb0-l">
                 <p className="paragraph1 mb1 pt0 mt0">
-                    Mana dzīve bija sagriezusies kājām gaisā 3mēnešus mocījos ar trakām lēkmēm dienu no dienas vairākas reizes dienā bij man vińas visu 3 mēnešu garumā bij traki + vēl pie šī depresija un emocionālā pārslodze +VD loti nokritos svarā nebij apetītes vispār plus visi simptomi VD 🥺😢 Likās kad netikšu arā no šīs dziłās bedres bija jau visādas domas galvā 😭🤯 Bet tad uzsāku kursu pie Ivara pirms Ziemassvētkiem un šodien teikšu jūtos loti loti labi visi simptomi ir pametuši mani un varu uzelpot un mierīgi sākt dzīvot bez bailēm bez trankvilizatoriem. Ivar tu tiešām dari brīnumus un ar tavu palīdzību tu man loti, loti palīdzēji 🙏🙏🙏😇😇😇  Vēlreiz PALDIES TEV ! 😊😇
+                    Mana dzīve bija sagriezusies kājām gaisā. 3 mēnešus mocījos ar trakām lēkmēm dienu no dienas, vairākas reizes dienā bija man viņas visu 3 mēnešu garumā. Bija traki, turklāt vēl pie šī depresija un emocionālā pārslodze. Vēl ļoti nokritos svarā, nebija apetītes vispār un visi parējie veģetatīvās distonijas simptomi. Likās, ka netikšu arā no šīs dziļās bedres. Bija jau visādas domas galvā. Bet tad uzsāku kursu pie Ivara pirms Ziemassvētkiem un šodien teikšu - jūtos ļoti ļoti labi. Visi simptomi ir pametuši mani un varu uzelpot un mierīgi sākt dzīvot bez bailēm, bez trankvilizatoriem. Ivar, tu tiešām dari brīnumus un ar tavu palīdzību tu man loti, loti palīdzēji. Vēlreiz, paldies Tev!
                 </p>
                 <p className="paragraph1 mt0">/Liene/</p>
             </section>
@@ -61,7 +62,7 @@ export default function Atsauksmes() {
                 </p>
                 <p className="paragraph1 mt0">/Anna/</p>
             </section>
-
+            </Fade>
         </div>
 
         <Review />

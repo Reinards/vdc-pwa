@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
-
+import Fade from "react-reveal/Fade";
 import DefaultLayout from "../layouts/layout-default"
 
 import css from "../styles/page-atveselosanas.module.scss"
@@ -20,7 +20,9 @@ export default function Atveselosanas() {
            
             <div className="flex justify-center paragraph1">
                 <div className="w-50 w-40-l mb4 mb0-l">
+                    <Fade delay={200}>
                     <Image src="/tris.png" alt="Cilvēks" width="150" height="150" layout="responsive" />
+                    </Fade>
                 </div>
             </div>
 

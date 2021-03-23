@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Disabled because of the serviceWorker property
+next.config.js

@@ -2,6 +2,7 @@ import css from "./contacts.module.scss"
 import Image from "next/image"
 import FormError from "../misc/form-error/form-error";
 import { Component } from "react"
+import Fade from "react-reveal/Fade";
 
 function getCurrentDate () {
     let currentDate = new Date();
@@ -115,12 +116,14 @@ class Contacts extends Component {
             <h2 className="white uppercase mr--lighter f4 f2-l tc mb3 mt0">Piesakies individuālajiem seansiem</h2>
             <p className="script f0 brown-2 tc ma0 lh1">Un sac baudit dzivi</p>
 
-            <div className={css.leaves}>
-                <Image src="/koks.png"
-                width="1000"
-                height="1000"
-                alt="Lapas"/>  
-            </div> 
+            <Fade delay={200}>
+                <div className={css.leaves}>
+                    <Image src="/koks.png"
+                    width="1000"
+                    height="1000"
+                    alt="Lapas"/>  
+                </div> 
+            </Fade>
 
             <form action="" className="flex flex-column mt3">
                 <div className="input-group flex flex-wrap mt4 mt0-l">
@@ -152,7 +155,7 @@ class Contacts extends Component {
                         <input className="mt3 no-click" id="date" type="text" placeholder="Datums" value={getCurrentDate()}/>
                     </div>
                 </div>
-                <div className="input-group flex flex-wrap">
+                <div className="input-group flex flex-wrap pt4 pt0-ns">
                     <div className="w-100 flex flex-column">
                         <label className="white uppercase paragraph1" htmlFor="message">Ziņa</label>
                         <textarea className="mt3" id="message" type="text" placeholder="Ziņa" onKeyUp={this.realTimeVerify}/>
