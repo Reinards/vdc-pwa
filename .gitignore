@@ -35,3 +35,4 @@ yarn-error.log*
 
 # Disabled because of the serviceWorker property
 next.config.js
+package-lock.json
