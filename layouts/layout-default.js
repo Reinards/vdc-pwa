@@ -40,10 +40,10 @@ class Default extends Component {
           const elapsed = currTime - this.state.timeOfLastDragEvent;
           const velocity = 20 * (touchX - this.state.prevTouchX) / elapsed;
           let deltaX = touchX - this.state.touchStartX + this.state.originalOffset;
-          if (deltaX < -100) {
+          if (deltaX < -70) {
             this.headerRef.current.toggleNavbar();
             this.handleEnd();
-            } else if (deltaX > 100) {
+            } else if (deltaX > 70) {
             this.headerRef.current.toggleNavbar();
             this.handleEnd();
           } else if (deltaX > 0) {
