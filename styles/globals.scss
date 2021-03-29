@@ -153,7 +153,7 @@ body {
 
 #layout-map {
     @include bp-min($bp-desktop) {
-        padding-top: 6vw;
+        padding-top: $height-navbar-mobile;
     }
 }
 
@@ -167,4 +167,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .ntc {
     text-transform: unset !important;
+}
+
+.map-frame {
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    iframe {
+        width: 100%;
+        height: 40vh;
+        line-height: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    @include bp-min($bp-desktop) {
+        iframe {
+            height: 40vw;
+        }
+    }
 }

@@ -7,7 +7,7 @@ export default function Buj() {
     let questionMargins = "mt3 mt4-l";
 
   return (
-    <DefaultLayout headerUrl="/img4.jpg">
+    <DefaultLayout headerUrl="/img6.jpg">
     
         <Head>
             <title>VDC - Biežāk Uzdotie Jautājumi - Pajautā</title>

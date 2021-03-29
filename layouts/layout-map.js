@@ -4,7 +4,7 @@ import Footer from '../components/footer/footer'
 function Default(props) {
     return (
         <div id="layout-map">
-            <Header headerUrl={props.headerUrl} showMap/>
+            <Header headerUrl={props.headerUrl} onlyNav/>
             {props.children}
             <Footer />
         </div>
