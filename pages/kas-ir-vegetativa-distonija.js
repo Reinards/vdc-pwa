@@ -4,7 +4,7 @@ import DefaultLayout from "../layouts/layout-default"
 
 export default function AboutVD() {
   return (
-    <DefaultLayout headerUrl="/img4.jpg">
+    <DefaultLayout headerUrl="/img9.jpg">
     
       <Head>
         <title>VDC - Kas ir veģetatīvā distonija?</title>

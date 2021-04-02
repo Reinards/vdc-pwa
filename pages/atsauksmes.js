@@ -39,7 +39,7 @@ function Atsauksmes () {
 
 // render() {
     return (
-      <DefaultLayout headerUrl="/img4.jpg">
+      <DefaultLayout headerUrl="/img8.jpg">
       
         <Head>
           <title>TODO - VDC</title>

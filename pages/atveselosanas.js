@@ -7,7 +7,7 @@ import css from "../styles/page-atveselosanas.module.scss"
 
 export default function Atveselosanas() {
   return (
-    <DefaultLayout headerUrl="/img1.jpg">
+    <DefaultLayout headerUrl="/img7.jpg">
     
         <Head>
             <title>VDC - Atveseļošanās</title>

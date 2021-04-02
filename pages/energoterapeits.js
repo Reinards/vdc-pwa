@@ -4,7 +4,7 @@ import DefaultLayout from "../layouts/layout-default"
 
 export default function Ivars() {
   return (
-    <DefaultLayout headerUrl="/img3.jpg">
+    <DefaultLayout headerUrl="/img4.jpg">
     
       <Head>
         <title>VDC - Ivars Tilgalis - Energoterapeits</title>
