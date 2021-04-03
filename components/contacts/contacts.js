@@ -115,7 +115,7 @@ class Contacts extends Component {
         <div id="contacts" className={css['contacts']+" cc relative"}>
             <h2 className="white uppercase mr--lighter f4 f2-l tc mb3 mt0">Piesakies individuālajiem seansiem</h2>
             <div class="flex justify-center">
-                <img className="w-80 w-60-ns" src="/contacts-cta.png" alt="Sāc Baudīt Dzīvi"/>
+                <img className="w-80 w-60-ns db h-auto" src="/contacts-cta.png" alt="Sāc Baudīt Dzīvi"/>
             </div>
 
             <Fade delay={200}>
