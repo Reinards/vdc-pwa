@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Image from "next/image"
 
 import DefaultLayout from "../layouts/layout-default"
 
@@ -47,9 +48,29 @@ export default function Ivars() {
                 Vidē, kuru klāj sniegs un ledus, plaušās nokļūst tikai retināts gaiss, kur nav izdīdzis ne mazākais zāles asns gadsimtiem ilgi, pārņem bezgalības sajūta. Viss ir tik tīrs un neskarts, tik tālu no ierastās ikdienas.
             </p>
 
-            <p className="paragraph1 pb0 mb0">
+            <p className="paragraph1 mb5">
             Tā ir vide, kur attīros, kur pārdzimstu, lai atgrieztos un turpinātu sevi jau ar lielāku jaudu un skaidrāku prātu.
             </p>
+            
+            <h2>Sertifikāti</h2>
+            
+            <div class="flex flex-wrap">
+              <div class="w-50 w-20-ns">
+                <Image src="/certificates/c1.jpg" alt="Sertifikāts" width="1343px" height="1920px" />
+              </div>
+              <div class="w-50 w-20-ns">
+                <Image src="/certificates/c4.jpg" alt="Sertifikāts" width="1329px" height="1920px" />
+              </div>
+              <div class="w-50 w-20-ns">
+                <Image src="/certificates/c2.jpg" alt="Sertifikāts" width="1347px" height="1920px" />
+              </div>
+              <div class="w-50 w-20-ns">
+                <Image src="/certificates/c5.jpg" alt="Sertifikāts" width="1351px" height="1920px" />
+              </div>
+              <div class="w-50 w-20-ns">
+                <Image src="/certificates/c3.jpg" alt="Sertifikāts" width="1360px" height="1920px" />
+              </div>
+            </div>
         </div>
 
       
