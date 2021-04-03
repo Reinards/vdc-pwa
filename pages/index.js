@@ -87,7 +87,7 @@ export default function Home() {
             <Simptomi lineWidth="35%" paddingRight="5">Svīšana, spiediena maiņa, drebuļi</Simptomi>
             <Simptomi lineWidth="35%" paddingRight="5">Zarnu funkcionālie traucējumi</Simptomi>
             <Simptomi lineWidth="35%" paddingRight="5">Garastāvokļu maiņas, uzbudinātība, raudulība</Simptomi>
-            <Simptomi lineWidth="35%" paddingRight="5">Bezmiegs, koncentrēšanāās trūkums</Simptomi>
+            <Simptomi lineWidth="35%" paddingRight="5">Bezmiegs, koncentrēšanās trūkums</Simptomi>
             <Simptomi lineWidth="35%" paddingRight="5" bottom>Vājums, ātra fiziska un garīga pārslodzes sajūta</Simptomi>
             <Simptomi lineWidth="35%" paddingRight="5" bottom>Sirdsklauves</Simptomi>
           </div>
