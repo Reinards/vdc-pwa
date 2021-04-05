@@ -21,7 +21,7 @@ export default function Kontakti() {
               <p className="pt0 mt0 mb0 pb2 pb3-ns">Tālrunis: <a className="link fat-white b" href={`tel: ${WebsiteData.phone}`}>{WebsiteData.phone}</a></p>
               <p className="pt0 mt0 mb0 pb2 pb3-ns">E-pasts: <a className="link fat-white b" href={`mailto: ${WebsiteData.phone}`}>{WebsiteData.email}</a></p>
               
-              <div className="flex">
+              <div className="flex pt3 pt2-ns">
                 <div className="mr3">
                     <a href={WebsiteData.facebook} target="blank" noreferrer="true" noopener="true">
                         <img src="/fb.svg" alt="Facebook" width="30" height="30" />
