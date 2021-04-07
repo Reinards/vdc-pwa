@@ -13,12 +13,24 @@ export default function Kontakti() {
           {/* <meta name="description" content="Description" /> */}
         </Head>
 
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap brown-bg">
           <div className="ph4 pv4 pv0-l ph0-l w-100 w-50-l flex items-center justify-center">
-            <div>
-              <p>Adrese: {WebsiteData.address}</p>
-              <p>Tālrunis: <a className="link black b" href={`tel: ${WebsiteData.phone}`}>{WebsiteData.phone}</a></p>
-              <p>E-pasts: <a className="link black b" href={`mailto: ${WebsiteData.phone}`}>{WebsiteData.email}</a></p>
+            <div className="real-white bold f4">
+              <img className="contacts-logo w-80 w-40-ns" src="/logo.svg" alt="Logo"/>
+              <p className="pt0 mt0 mb0 pb2 pb3-ns">Adrese: {WebsiteData.address}</p>
+              <p className="pt0 mt0 mb0 pb2 pb3-ns">Tālrunis: <a className="link fat-white b" href={`tel: ${WebsiteData.phone}`}>{WebsiteData.phone}</a></p>
+              <p className="pt0 mt0 mb0 pb2 pb3-ns">E-pasts: <a className="link fat-white b" href={`mailto: ${WebsiteData.phone}`}>{WebsiteData.email}</a></p>
+              
+              <div className="flex pt3 pt2-ns">
+                <div className="mr3">
+                    <a href={WebsiteData.facebook} target="blank" noreferrer="true" noopener="true">
+                        <img src="/fb.svg" alt="Facebook" width="30" height="30" />
+                    </a>
+                </div>
+                <a href={WebsiteData.instagram} target="blank" noreferrer="true" noopener="true">
+                    <img src="/ig.svg" alt="Instagram" width="30" height="30" />
+                </a>
+              </div>
             </div>
           </div>
 
