@@ -79,39 +79,29 @@ class Contacts extends Component {
     
     }
     
-    sendMail = (e) => {
+    verifyMail = (e) => {
         e.preventDefault();
     
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let phone = document.getElementById("phone").value;
         let message = document.getElementById("message").value;
-        let date = document.getElementById("date").value;
     
         this.verifyFields("name", name);
         this.verifyFields("message", message);
         this.verifyFields("phone", phone);
         this.verifyFields("email", email);
 
-        // if(this.state.nameErrorType=="none"
-        // && this.state.phoneErrorType=="none"
-        // && this.state.emailErrorType=="none"
-        // && this.state.messageErrorType=="none") {
-        //     let proxyUrl = 'https://secret-ocean-49799.herokuapp.com/';
-        //     let targetUrl = 'https://vdce.lv/mailer/index.php';
-            
-        //     const requestOptions = {
-        //         method: 'POST',
-        //         headers: { 'Content-Type': 'application/json' },
-        //         body: JSON.stringify({ name: name, phone: phone, email: email, message: message, date:date}),
-        //         mode: 'no-cors'
-        //     };
-            
-        //     fetch(targetUrl, requestOptions)
-        //     .then(res => {
-        //         console.log(res);
-        //     });
-        // }
+        setTimeout(()=>{
+            if(this.state.nameErrorType=="none"
+            && this.state.phoneErrorType=="none"
+            && this.state.emailErrorType=="none"
+            && this.state.messageErrorType=="none") {
+    
+                this.handleSubmit(e);
+            }
+        },500);
+
     }
 
     realTimeVerify = (e) => {
@@ -135,7 +125,7 @@ class Contacts extends Component {
                 </div> 
             </Fade>
 
-            <form id="contacts-form" onSubmit={this.handleSubmit} className="flex flex-column mt3">
+            <form id="contacts-form" className="flex flex-column mt3">
                 <div className="input-group flex flex-wrap mt4 mt0-l">
                     <div className="w-100 w-50-ns flex flex-column pr3-ns">
                         <label className="white uppercase paragraph1" htmlFor="name">Vārds</label>
@@ -202,8 +192,21 @@ class Contacts extends Component {
         let request = this.state.request;
         let phone = this.state.phone;
 
-        this.sendMail("template_0yt4x06",{from_name: name, reply_to: email, message: request, phone: phone});
-        document.getElementById("contacts-form").reset();
+        this.verifyFields("name", name);
+        this.verifyFields("message", request);
+        this.verifyFields("phone", phone);
+        this.verifyFields("email", email);
+
+        setTimeout(()=>{
+            if(this.state.nameErrorType=="none"
+            && this.state.phoneErrorType=="none"
+            && this.state.emailErrorType=="none"
+            && this.state.messageErrorType=="none") {
+                this.sendMail("template_0yt4x06",{from_name: name, reply_to: email, message: request, phone: phone});
+                document.getElementById("contacts-form").reset();
+            }
+        },500);
+
     }
     sendMail = (templateId, variables) => {
         emailjs.send( 'service_0d0a6io', templateId, variables ).then(res => {
