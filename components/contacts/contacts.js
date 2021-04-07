@@ -4,6 +4,9 @@ import FormError from "../misc/form-error/form-error";
 import { Component } from "react"
 import Fade from "react-reveal/Fade";
 
+import emailjs from 'emailjs-com';
+import{ init } from 'emailjs-com';
+
 function getCurrentDate () {
     let currentDate = new Date();
     let cDay = currentDate.getDate()
@@ -21,8 +24,13 @@ class Contacts extends Component {
             nameErrorType: "none",
             phoneErrorType: "none",
             emailErrorType: "none",
-            messageErrorType: "none"
+            messageErrorType: "none",
+            request: "",
+            name: "Name",
+            email: "",
+            phone: ""
         }
+        init("user_xp8w6pUvz1SXbMloDrvEP");
     }
 
     verifyFields = (field, val) => {
@@ -85,25 +93,25 @@ class Contacts extends Component {
         this.verifyFields("phone", phone);
         this.verifyFields("email", email);
 
-        if(this.state.nameErrorType=="none"
-        && this.state.phoneErrorType=="none"
-        && this.state.emailErrorType=="none"
-        && this.state.messageErrorType=="none") {
-            let proxyUrl = 'https://secret-ocean-49799.herokuapp.com/';
-            let targetUrl = 'https://vdce.lv/mailer/index.php';
+        // if(this.state.nameErrorType=="none"
+        // && this.state.phoneErrorType=="none"
+        // && this.state.emailErrorType=="none"
+        // && this.state.messageErrorType=="none") {
+        //     let proxyUrl = 'https://secret-ocean-49799.herokuapp.com/';
+        //     let targetUrl = 'https://vdce.lv/mailer/index.php';
             
-            const requestOptions = {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name: name, phone: phone, email: email, message: message, date:date}),
-                mode: 'no-cors'
-            };
+        //     const requestOptions = {
+        //         method: 'POST',
+        //         headers: { 'Content-Type': 'application/json' },
+        //         body: JSON.stringify({ name: name, phone: phone, email: email, message: message, date:date}),
+        //         mode: 'no-cors'
+        //     };
             
-            fetch(targetUrl, requestOptions)
-            .then(res => {
-                console.log(res);
-            });
-        }
+        //     fetch(targetUrl, requestOptions)
+        //     .then(res => {
+        //         console.log(res);
+        //     });
+        // }
     }
 
     realTimeVerify = (e) => {
@@ -125,18 +133,18 @@ class Contacts extends Component {
                 </div> 
             </Fade>
 
-            <form className="flex flex-column mt3">
+            <form id="contacts-form" onSubmit={this.handleSubmit} className="flex flex-column mt3">
                 <div className="input-group flex flex-wrap mt4 mt0-l">
                     <div className="w-100 w-50-ns flex flex-column pr3-ns">
                         <label className="white uppercase paragraph1" htmlFor="name">Vārds</label>
-                        <input className="mt3" id="name" type="text" placeholder="Vārds" onKeyUp={this.realTimeVerify}/>
+                        <input className="mt3" id="name" type="text" placeholder="Vārds" onChange={this.handleNameChange}/>
                         <div className="mb4">
                             <FormError id="name-error" visible="true" errorType={this.state.nameErrorType}/>
                         </div>
                     </div>
                     <div className="w-100 w-50-ns flex flex-column">
                         <label className="white uppercase paragraph1" htmlFor="email">E-pasts</label>
-                        <input className="mt3" id="email" type="email" placeholder="E-pasts" onKeyUp={this.realTimeVerify}/>
+                        <input className="mt3" id="email" type="email" placeholder="E-pasts" onChange={this.handleEmailChange}/>
                         <div className="mb4">
                             <FormError id="email-error" visible="true" errorType={this.state.emailErrorType}/>
                         </div>
@@ -145,7 +153,7 @@ class Contacts extends Component {
                 <div className="input-group flex flex-wrap">
                     <div className="w-100 w-50-ns flex flex-column pr3-ns">
                         <label className="white uppercase paragraph1" htmlFor="phone">Tālrunis</label>
-                        <input className="mt3" id="phone" type="phone" placeholder="Tālrunis" onKeyUp={this.realTimeVerify}/>
+                        <input className="mt3" id="phone" type="phone" placeholder="Tālrunis" onChange={this.handlePhoneChange}/>
                         <div className="mb4">
                             <FormError id="phone-error" visible="true" errorType={this.state.phoneErrorType}/>
                         </div>
@@ -158,18 +166,57 @@ class Contacts extends Component {
                 <div className="input-group flex flex-wrap pt4 pt0-ns">
                     <div className="w-100 flex flex-column">
                         <label className="white uppercase paragraph1" htmlFor="message">Ziņa</label>
-                        <textarea className="mt3" id="message" type="text" placeholder="Ziņa" onKeyUp={this.realTimeVerify}/>
+                        <textarea className="mt3" id="message" type="text" placeholder="Ziņa" onChange={this.handleRequestChange}/>
                         <div className="mb4">
                             <FormError id="message-error" visible="true" errorType={this.state.messageErrorType}/>
                         </div>
                     </div>
                 </div>
                 <div className="flex justify-end">
-                    <button type="submit" onClick={this.sendMail} className="button--brown-2 w-100 w-20-l mt3 mt4-l paragraph1">Pieteikties</button>
+                    <button type="submit" onClick={this.handleSubmit} className="button--brown-2 w-100 w-20-l mt3 mt4-l paragraph1">Pieteikties</button>
                 </div>
             </form>
         </div>
     )
+    }
+
+    handleNameChange = (e) => {
+        this.setState({name: e.target.value});
+    }
+    handleEmailChange = (e) => {
+        this.setState({email: e.target.value});
+    }
+    handleRequestChange = (e) => {
+        this.setState({request: e.target.value});
+    }
+    handlePhoneChange = (e) => {
+        this.setState({phone: e.target.value});
+    }
+    handleSubmit = (e) => {
+        e.preventDefault();
+        
+        let name = this.state.name;
+        let email = this.state.email;
+        let request = this.state.request;
+        let phone = this.state.phone;
+
+        this.sendMail("template_0yt4x06",{from_name: name, reply_to: email, message: request, phone: phone});
+        document.getElementById("contacts-form").reset();
+    }
+    sendMail = (templateId, variables) => {
+        emailjs.send( 'service_0d0a6io', templateId, variables ).then(res => {
+                alert("Ziņa nosūtīta veiksmīgi!");
+            })
+            .catch(err => {
+                alert("Ziņu neizdevās nosūtīt. Pārliecinies, ka visi lauki aizpildīti un internets ieslēgts.");
+                console.error('Oh well, you failed. Here some thoughts on the error that occured:', err);
+            })
+    }
+    messageSentCallback = () => {
+        alert("Ziņa nosūtīta veiksmīgi!");
+    }
+    messageErrorCallback = () => {
+        alert("Ziņu neizdevās nosūtīt. Pārliecinies, ka visi lauki aizpildīti un internets ieslēgts.");
     }
 }
 

@@ -9,7 +9,7 @@ function Footer() {
     return (
         <footer id="footer" className={css["footer"]+" fc flex flex-wrap white"}>
             <div className="w-100 w-50-ns w-70-l">
-                <h2 className="f4 mr--lighter mt0">Kontakti</h2>
+                <h2 className="f4 mr--lighter mt0">Veģetatīvās Distonijas Centrs // Kontakti</h2>
                 
                 <div className="flex">
                     <div className="w-40 w-20-l f6 paragraph1 mt2-l">Adrese</div>
