@@ -42,7 +42,7 @@ function Atsauksmes () {
       <DefaultLayout headerUrl="/img10.jpg">
       
         <Head>
-          <title>TODO - VDC</title>
+          <title>VDC - Atsauksmes</title>
         </Head>
         
           <div className="mc">

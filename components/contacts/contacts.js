@@ -46,7 +46,7 @@ class Contacts extends Component {
         }
         
         if(field == "message") {
-            if(val.length > 10) {
+            if(val.length > 5) {
                 this.setState({messageErrorType: "none"});
                 return true;
             } 
