@@ -144,14 +144,11 @@ export default function Home() {
         </div>
         </Fade>
         
-          <div className="w-100 dn-m w-30-l">
+          <div className="w-100 dn-m w-30-l lh0">
           <Fade delay={200}>
-              <Image 
+              <img 
                 src="/img2.jpg"
                 alt="Ivars Tilgalis"
-                layout="responsive"
-                width="4978px"
-                height="6338px"
               />
           </Fade>
           </div>

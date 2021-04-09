@@ -5,7 +5,7 @@ function Benefit({children, imgUrl, alt, title}) {
     return (
         <div className="flex items-center flex-column">
             <Fade>
-                <Image
+                <img
                     src={imgUrl}
                     alt={alt}
                     width="150"

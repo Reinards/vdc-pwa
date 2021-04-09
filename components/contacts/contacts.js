@@ -118,9 +118,7 @@ class Contacts extends Component {
 
             <Fade delay={200}>
                 <div className={css.leaves}>
-                    <Image src="/koks.png"
-                    width="1000"
-                    height="1000"
+                    <img src="/koks.png"
                     alt="Lapas"/>  
                 </div> 
             </Fade>
