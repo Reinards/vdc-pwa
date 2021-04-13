@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
+import Modal from "../components/misc/certificate-modal/certificate-modal"
 
 import DefaultLayout from "../layouts/layout-default"
 
@@ -56,21 +57,34 @@ export default function Ivars() {
             
             <div class="flex flex-wrap">
               <div class="w-50 w-20-ns">
-                <Image src="/certificates/c1.jpg" alt="Sertifikāts" width="1343px" height="1920px" />
+                <a title="Apskatīt Sertifikātu" href="/certificates/c1.jpg" target="_blank">
+                  <img src="/certificates/c1.png" alt="Sertifikāts"/>
+                </a>
               </div>
               <div class="w-50 w-20-ns">
-                <Image src="/certificates/c4.jpg" alt="Sertifikāts" width="1329px" height="1920px" />
+                <a title="Apskatīt Sertifikātu" href="/certificates/c2.jpg" target="_blank">
+                  <img src="/certificates/c4.png" alt="Sertifikāts"/>
+                </a>
               </div>
               <div class="w-50 w-20-ns">
-                <Image src="/certificates/c2.jpg" alt="Sertifikāts" width="1347px" height="1920px" />
+                <a title="Apskatīt Sertifikātu" href="/certificates/c3.jpg" target="_blank">
+                  <img src="/certificates/c2.png" alt="Sertifikāts"/>
+                </a>
               </div>
               <div class="w-50 w-20-ns">
-                <Image src="/certificates/c5.jpg" alt="Sertifikāts" width="1351px" height="1920px" />
+                <a title="Apskatīt Sertifikātu" href="/certificates/c4.jpg" target="_blank">
+                  <img src="/certificates/c5.png" alt="Sertifikāts"/>
+                </a>
               </div>
               <div class="w-50 w-20-ns">
-                <Image src="/certificates/c3.jpg" alt="Sertifikāts" width="1360px" height="1920px" />
+                <a title="Apskatīt Sertifikātu" href="/certificates/c5.jpg" target="_blank">
+                  <img src="/certificates/c3.png" alt="Sertifikāts"/>
+                </a>
               </div>
             </div>
+
+            {/* <Modal/> */}
+
         </div>
 
       
