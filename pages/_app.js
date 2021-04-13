@@ -24,8 +24,8 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
 
-        <meta property="og:image:height" content="1257" />
-        <meta property="og:image:width" content="2400" />
+        <meta property="og:image:height" content="279" />
+        <meta property="og:image:width" content="279" />
         <meta property="og:description" content="Mēs tev palīdzēsim atgūt mieru bez medikamentiem." />
         <meta property="og:title" content="VDC - Atgūsti Mieru!" />
         <meta property="og:image" content="https://vdce.lv/social/og-image.jpg" />
