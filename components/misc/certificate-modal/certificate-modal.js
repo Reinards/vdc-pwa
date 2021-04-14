@@ -5,19 +5,21 @@ class CertificateModal extends Component {
     
     constructor(props) {
         super(props);
-        this.state = {
-            modalOpen: false,
-            imgId: 1
-        }
     }
 
     render() {
 
-        return (
-            <>
-                <div className={css.overlay}></div>
-            </>
-        )
+        if(this.props.visible) {
+            return (
+                <div onClick={this.props.cb}>
+                    <div className={css.overlay}></div>
+                    <img className={css.certificateImg} src={"/certificates/c"+this.props.id+".jpg"} />
+                </div>
+            )
+        }else {
+            return "";
+        }
+
 
     }
 }

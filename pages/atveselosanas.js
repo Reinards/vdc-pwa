@@ -62,7 +62,7 @@ export default function Atveselosanas() {
                             <span className="pa2 paragraph1">Iekšējs miers</span>
                             <span className="pa2 paragraph1">Dzīvesprieks</span>
                             <span className="pa2 paragraph1">Optimisms</span>
-                            <span className="pa2 paragraph1">Vesselīgs miegs</span>
+                            <span className="pa2 paragraph1">Veselīgs miegs</span>
                             <span className="pa2 paragraph1">Sociāli aktīvs</span>
                             <span className="pa2 paragraph1">Objektīvs veselības novērtējums</span>
                         </div>
